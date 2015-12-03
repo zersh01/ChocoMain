@@ -1,0 +1,14 @@
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMain.exe.config
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMain.exe
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMain.pdb
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form2.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMain.exe
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMain.pdb
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMain.exe.manifest
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMain.application
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMain.exe.manifest
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMain.application
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
