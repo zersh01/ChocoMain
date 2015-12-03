@@ -353,11 +353,11 @@ namespace WindowsFormsApplication1
             {
                 su.WriteLine(richTextBox4.Text);
             }
-            
+
             //создаем пакет
             //create package
             
-            string command = "cd " + label14.Text +" & choco pack " + label16.Text + " & pause "+ "& exit";
+            string command = "cd /D " + label14.Text + " & choco pack " + label16.Text + " & pause "+ "& exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K"  + command );
 
             System.Threading.Thread.Sleep(5000);
@@ -503,5 +503,7 @@ namespace WindowsFormsApplication1
             Form2 AboutForm = new Form2();
             AboutForm.ShowDialog();
         }
+
+       
     }
 }

@@ -294,6 +294,7 @@
             this.nuspec.Size = new System.Drawing.Size(866, 527);
             this.nuspec.TabIndex = 0;
             this.nuspec.Text = "nuspec";
+
             // 
             // button12
             // 
