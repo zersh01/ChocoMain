@@ -30,3 +30,4 @@ D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ChocoMain.application
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\ChocoMain.exe.manifest
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\ChocoMain.application
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ChocoMaint.exe.config

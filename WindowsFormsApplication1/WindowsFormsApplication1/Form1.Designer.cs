@@ -294,7 +294,6 @@
             this.nuspec.Size = new System.Drawing.Size(866, 527);
             this.nuspec.TabIndex = 0;
             this.nuspec.Text = "nuspec";
-
             // 
             // button12
             // 
@@ -425,6 +424,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(261, 20);
             this.textBox7.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.textBox7, "Short description");
             // 
             // textBox6
             // 
@@ -451,6 +451,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(127, 20);
             this.textBox4.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox4, "Software version");
             // 
             // textBox3
             // 
@@ -459,6 +460,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(127, 20);
             this.textBox3.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox3, "Title name on web site");
             // 
             // textBox2
             // 
@@ -485,6 +487,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 20);
             this.textBox1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox1, "Package name in chocolatey.org");
             // 
             // richTextBox1
             // 
@@ -646,7 +649,7 @@
             this.chocolateyInstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyInstall.Name = "chocolateyInstall";
             this.chocolateyInstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyInstall.Size = new System.Drawing.Size(866, 527);
+            this.chocolateyInstall.Size = new System.Drawing.Size(867, 527);
             this.chocolateyInstall.TabIndex = 1;
             this.chocolateyInstall.Text = "chocolateyInstall";
             // 
@@ -726,7 +729,7 @@
             this.chocolateyUninstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyUninstall.Name = "chocolateyUninstall";
             this.chocolateyUninstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyUninstall.Size = new System.Drawing.Size(866, 527);
+            this.chocolateyUninstall.Size = new System.Drawing.Size(867, 527);
             this.chocolateyUninstall.TabIndex = 2;
             this.chocolateyUninstall.Text = "chocolateyUninstall";
             // 

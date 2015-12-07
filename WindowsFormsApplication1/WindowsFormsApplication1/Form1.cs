@@ -39,6 +39,7 @@ namespace WindowsFormsApplication1
             {
                 tabControl1.Visible = true;
                 textBox12.ReadOnly = false;
+                
 
                 Path = System.IO.Path.GetDirectoryName(savefile.FileName);
 
@@ -106,7 +107,7 @@ namespace WindowsFormsApplication1
 
             //активируем элементы
             tabControl1.Visible = true;
-
+            
             /*
             многстрочная подсказка для зависимостей
               */
