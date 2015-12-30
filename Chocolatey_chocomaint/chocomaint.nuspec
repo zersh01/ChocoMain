@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>chocomaint</id>
+    <title>ChocoMaint</title>
+    <version>1.0.0.2</version>
+    <authors>S.Parhomenko</authors>
+    <owners>zersh</owners>
+    <summary>Simple GUI  for create package nupkg</summary>
+    <description>Simple GUI  for create package nupkg for Chocolatey project
+
+Простой интерфейс для создания пакетов nupkg  для использования в проекте Chocolatey.org
+
+</description>
+    <projectUrl>https://github.com/zersh01/ChocoMain</projectUrl>
+    <tags>GUI chocomaint nupkg</tags>
+    <copyright>S.Parhomenko</copyright>
+    <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Change setup version</releaseNotes>
+    <iconUrl>https://rawgit.com/zersh01/ChocoMain/master/Icon.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

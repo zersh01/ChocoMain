@@ -1,0 +1,1 @@
+choco install chocomaint -source D:\YandexDisk\backup\Chocolatey\MyProject\chocomaint -y -force
