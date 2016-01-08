@@ -42,11 +42,22 @@
             this.enterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chocoMaintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chocoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.nuspec = new System.Windows.Forms.TabPage();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -127,7 +138,7 @@
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openNuspecToolStripMenuItem
@@ -135,7 +146,7 @@
             this.openNuspecToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openNuspecToolStripMenuItem.Image")));
             this.openNuspecToolStripMenuItem.Name = "openNuspecToolStripMenuItem";
             this.openNuspecToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.openNuspecToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.openNuspecToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.openNuspecToolStripMenuItem.Text = "New";
             this.openNuspecToolStripMenuItem.Click += new System.EventHandler(this.openNuspecToolStripMenuItem_Click);
             // 
@@ -144,7 +155,7 @@
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.exitToolStripMenuItem.Text = "Open nuspec...";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -152,7 +163,7 @@
             // 
             this.exitToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem1.Image")));
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(196, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
@@ -164,14 +175,14 @@
             this.uploadPackageToChocolateyToolStripMenuItem,
             this.enterToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // installThisPackageToolStripMenuItem
             // 
             this.installThisPackageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("installThisPackageToolStripMenuItem.Image")));
             this.installThisPackageToolStripMenuItem.Name = "installThisPackageToolStripMenuItem";
-            this.installThisPackageToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.installThisPackageToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.installThisPackageToolStripMenuItem.Text = "Install this package";
             this.installThisPackageToolStripMenuItem.Click += new System.EventHandler(this.installThisPackageToolStripMenuItem_Click);
             // 
@@ -179,7 +190,7 @@
             // 
             this.uninstallThisPackageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("uninstallThisPackageToolStripMenuItem.Image")));
             this.uninstallThisPackageToolStripMenuItem.Name = "uninstallThisPackageToolStripMenuItem";
-            this.uninstallThisPackageToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.uninstallThisPackageToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.uninstallThisPackageToolStripMenuItem.Text = "Uninstall this package";
             this.uninstallThisPackageToolStripMenuItem.Click += new System.EventHandler(this.uninstallThisPackageToolStripMenuItem_Click);
             // 
@@ -187,7 +198,7 @@
             // 
             this.uploadPackageToChocolateyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("uploadPackageToChocolateyToolStripMenuItem.Image")));
             this.uploadPackageToChocolateyToolStripMenuItem.Name = "uploadPackageToChocolateyToolStripMenuItem";
-            this.uploadPackageToChocolateyToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.uploadPackageToChocolateyToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.uploadPackageToChocolateyToolStripMenuItem.Text = "Upload package to Chocolatey";
             this.uploadPackageToChocolateyToolStripMenuItem.Click += new System.EventHandler(this.uploadPackageToChocolateyToolStripMenuItem_Click);
             // 
@@ -195,7 +206,7 @@
             // 
             this.enterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("enterToolStripMenuItem.Image")));
             this.enterToolStripMenuItem.Name = "enterToolStripMenuItem";
-            this.enterToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.enterToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.enterToolStripMenuItem.Text = "Enter API Key";
             this.enterToolStripMenuItem.Click += new System.EventHandler(this.enterToolStripMenuItem_Click);
             // 
@@ -205,22 +216,40 @@
             this.helpToolStripMenuItem,
             this.aboutToolStripMenuItem1});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.aboutToolStripMenuItem.Text = "Help";
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chocoMaintToolStripMenuItem,
+            this.chocoToolStripMenuItem});
             this.helpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripMenuItem.Image")));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.helpToolStripMenuItem.Text = "Help";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // chocoMaintToolStripMenuItem
+            // 
+            this.chocoMaintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoMaintToolStripMenuItem.Image")));
+            this.chocoMaintToolStripMenuItem.Name = "chocoMaintToolStripMenuItem";
+            this.chocoMaintToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chocoMaintToolStripMenuItem.Text = "ChocoMaint";
+            this.chocoMaintToolStripMenuItem.Click += new System.EventHandler(this.chocoMaintToolStripMenuItem_Click);
+            // 
+            // chocoToolStripMenuItem
+            // 
+            this.chocoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoToolStripMenuItem.Image")));
+            this.chocoToolStripMenuItem.Name = "chocoToolStripMenuItem";
+            this.chocoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chocoToolStripMenuItem.Text = "Chocolatey";
+            this.chocoToolStripMenuItem.Click += new System.EventHandler(this.chocoToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem1.Image")));
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -245,12 +274,21 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(874, 553);
+            this.tabControl1.Size = new System.Drawing.Size(874, 654);
             this.tabControl1.TabIndex = 20;
             // 
             // nuspec
             // 
             this.nuspec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.nuspec.Controls.Add(this.textBox16);
+            this.nuspec.Controls.Add(this.textBox15);
+            this.nuspec.Controls.Add(this.textBox14);
+            this.nuspec.Controls.Add(this.textBox13);
+            this.nuspec.Controls.Add(this.checkBox7);
+            this.nuspec.Controls.Add(this.checkBox6);
+            this.nuspec.Controls.Add(this.checkBox5);
+            this.nuspec.Controls.Add(this.checkBox4);
+            this.nuspec.Controls.Add(this.checkBox3);
             this.nuspec.Controls.Add(this.button12);
             this.nuspec.Controls.Add(this.button11);
             this.nuspec.Controls.Add(this.textBox12);
@@ -291,13 +329,111 @@
             this.nuspec.Location = new System.Drawing.Point(4, 22);
             this.nuspec.Name = "nuspec";
             this.nuspec.Padding = new System.Windows.Forms.Padding(3);
-            this.nuspec.Size = new System.Drawing.Size(866, 527);
+            this.nuspec.Size = new System.Drawing.Size(866, 628);
             this.nuspec.TabIndex = 0;
             this.nuspec.Text = "nuspec";
             // 
+            // textBox16
+            // 
+            this.textBox16.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox16.Location = new System.Drawing.Point(20, 509);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(261, 20);
+            this.textBox16.TabIndex = 49;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox15.Location = new System.Drawing.Point(20, 458);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(261, 20);
+            this.textBox15.TabIndex = 48;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox14.Location = new System.Drawing.Point(315, 458);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(305, 20);
+            this.textBox14.TabIndex = 47;
+            this.toolTip1.SetToolTip(this.textBox14, "Use rawgit.com - service for add icon");
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox13.Location = new System.Drawing.Point(315, 509);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(305, 20);
+            this.textBox13.TabIndex = 46;
+            this.toolTip1.SetToolTip(this.textBox13, "Use rawgit.com - service for add icon");
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(20, 486);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(90, 17);
+            this.checkBox7.TabIndex = 45;
+            this.checkBox7.Text = "mailingListUrl ";
+            this.toolTip1.SetToolTip(this.checkBox7, "Check, if your package uses a helper function that requires administrative permis" +
+        "sions. True or false");
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(20, 435);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(65, 17);
+            this.checkBox6.TabIndex = 44;
+            this.checkBox6.Text = "docsUrl ";
+            this.toolTip1.SetToolTip(this.checkBox6, "Check, if your package uses a helper function that requires administrative permis" +
+        "sions. True or false");
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(315, 435);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(97, 17);
+            this.checkBox5.TabIndex = 43;
+            this.checkBox5.Text = "bugTrackerUrl ";
+            this.toolTip1.SetToolTip(this.checkBox5, "Check, if your package uses a helper function that requires administrative permis" +
+        "sions. True or false");
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(315, 486);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(108, 17);
+            this.checkBox4.TabIndex = 42;
+            this.checkBox4.Text = "projectSourceUrl ";
+            this.toolTip1.SetToolTip(this.checkBox4, "Check, if your package uses a helper function that requires administrative permis" +
+        "sions. True or false");
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(20, 543);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(194, 17);
+            this.checkBox3.TabIndex = 41;
+            this.checkBox3.Text = "Requires Administrative Permissions";
+            this.toolTip1.SetToolTip(this.checkBox3, "Check, if your package uses a helper function that requires administrative permis" +
+        "sions. True or false");
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(736, 404);
+            this.button12.Location = new System.Drawing.Point(739, 505);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(124, 36);
             this.button12.TabIndex = 40;
@@ -308,7 +444,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(736, 362);
+            this.button11.Location = new System.Drawing.Point(739, 463);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(124, 36);
             this.button11.TabIndex = 39;
@@ -342,7 +478,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(372, 508);
+            this.label14.Location = new System.Drawing.Point(366, 609);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(0, 13);
             this.label14.TabIndex = 35;
@@ -350,7 +486,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(312, 508);
+            this.label15.Location = new System.Drawing.Point(306, 609);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(47, 13);
             this.label15.TabIndex = 34;
@@ -359,7 +495,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(59, 508);
+            this.label16.Location = new System.Drawing.Point(53, 609);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 13);
             this.label16.TabIndex = 33;
@@ -367,7 +503,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(17, 508);
+            this.label17.Location = new System.Drawing.Point(11, 609);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(38, 13);
             this.label17.TabIndex = 32;
@@ -375,7 +511,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(736, 488);
+            this.button6.Location = new System.Drawing.Point(739, 589);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 36);
             this.button6.TabIndex = 28;
@@ -403,7 +539,7 @@
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox9.Location = new System.Drawing.Point(20, 389);
+            this.textBox9.Location = new System.Drawing.Point(20, 377);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(261, 20);
             this.textBox9.TabIndex = 9;
@@ -411,7 +547,7 @@
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox8.Location = new System.Drawing.Point(315, 389);
+            this.textBox8.Location = new System.Drawing.Point(315, 377);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(305, 20);
             this.textBox8.TabIndex = 14;
@@ -510,7 +646,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 440);
+            this.checkBox1.Location = new System.Drawing.Point(20, 566);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(161, 17);
             this.checkBox1.TabIndex = 10;
@@ -521,7 +657,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(312, 373);
+            this.label11.Location = new System.Drawing.Point(312, 361);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 12;
@@ -566,7 +702,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 373);
+            this.label6.Location = new System.Drawing.Point(17, 361);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 7;
@@ -628,7 +764,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(736, 446);
+            this.button1.Location = new System.Drawing.Point(739, 547);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 36);
             this.button1.TabIndex = 16;
@@ -649,7 +785,7 @@
             this.chocolateyInstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyInstall.Name = "chocolateyInstall";
             this.chocolateyInstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyInstall.Size = new System.Drawing.Size(867, 527);
+            this.chocolateyInstall.Size = new System.Drawing.Size(866, 628);
             this.chocolateyInstall.TabIndex = 1;
             this.chocolateyInstall.Text = "chocolateyInstall";
             // 
@@ -688,7 +824,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(736, 488);
+            this.button7.Location = new System.Drawing.Point(739, 589);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(124, 36);
             this.button7.TabIndex = 29;
@@ -710,7 +846,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(736, 446);
+            this.button2.Location = new System.Drawing.Point(609, 440);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 36);
             this.button2.TabIndex = 19;
@@ -729,7 +865,7 @@
             this.chocolateyUninstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyUninstall.Name = "chocolateyUninstall";
             this.chocolateyUninstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyUninstall.Size = new System.Drawing.Size(867, 527);
+            this.chocolateyUninstall.Size = new System.Drawing.Size(866, 628);
             this.chocolateyUninstall.TabIndex = 2;
             this.chocolateyUninstall.Text = "chocolateyUninstall";
             // 
@@ -757,7 +893,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(736, 488);
+            this.button8.Location = new System.Drawing.Point(739, 589);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(124, 36);
             this.button8.TabIndex = 22;
@@ -783,14 +919,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(874, 576);
+            this.ClientSize = new System.Drawing.Size(874, 677);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Chocomain - Chocolatey GUI for Maintainers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chocomaint - Chocolatey GUI for Maintainers";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -873,6 +1010,17 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.ToolStripMenuItem chocoMaintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chocoToolStripMenuItem;
     }
 }
 

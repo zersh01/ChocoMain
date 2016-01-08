@@ -17,6 +17,8 @@ using Microsoft.VisualBasic;
 
 namespace WindowsFormsApplication1
 {
+    using Extension;
+           
     public partial class Form1 : Form
     {
         public Form1()
@@ -26,7 +28,6 @@ namespace WindowsFormsApplication1
             textBox12.Visible = false;
             button11.Visible = false;
             button12.Visible = false;
-            
         }
 
 
@@ -39,7 +40,7 @@ namespace WindowsFormsApplication1
             {
                 tabControl1.Visible = true;
                 textBox12.ReadOnly = false;
-                
+
 
                 Path = System.IO.Path.GetDirectoryName(savefile.FileName);
 
@@ -47,9 +48,9 @@ namespace WindowsFormsApplication1
                 label16.Text = savefile.FileName;
                 label14.Text = Path;
                 System.IO.Directory.CreateDirectory(label14.Text + "\\tools");
-            
+
                 //многострочная подсказка для поля зависимостей
-                
+
                 ToolTip deptooltip = new ToolTip();
 
                 string DependsToolTip = @"Add dependency one per line.
@@ -61,7 +62,7 @@ namespace WindowsFormsApplication1
 
                 deptooltip.SetToolTip(textBox12, DepToolTip);
                 //многострочная подсказка для поля зависимостей/////
-                
+
                 //Если файл новый, то очищаем все поля(вдруг был открыт какойто другой файл)
 
                 textBox1.Text = "";
@@ -80,6 +81,16 @@ namespace WindowsFormsApplication1
                 richTextBox2.Text = "";
                 richTextBox3.Text = "";
                 richTextBox4.Text = "";
+                
+                //Additional options
+                textBox13.Text = "";
+                textBox14.Text = "";
+                textBox15.Text = "";
+                textBox16.Text = "";
+                textBox13.ReadOnly = true;
+                textBox14.ReadOnly = true;
+                textBox15.ReadOnly = true;
+                textBox16.ReadOnly = true;
 
             }
 
@@ -91,11 +102,10 @@ namespace WindowsFormsApplication1
             Close();
         }
 
-      
-
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //OPEN File
             // MessageBox.Show("Выбран файл: " + xmlDocument);
             //выбираем файл
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -107,10 +117,18 @@ namespace WindowsFormsApplication1
 
             //активируем элементы
             tabControl1.Visible = true;
+            checkBox2.Checked = false;
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
+            textBox15.Text = "";
+            textBox16.Text = "";
+            textBox13.ReadOnly = true;
+            textBox14.ReadOnly = true;
+            textBox15.ReadOnly = true;
+            textBox16.ReadOnly = true;
+
             
-            /*
-            многстрочная подсказка для зависимостей
-              */
 
             ToolTip deptooltip = new ToolTip();
 
@@ -123,8 +141,6 @@ namespace WindowsFormsApplication1
 
             deptooltip.SetToolTip(textBox12, DepToolTip);
 
-
-          
             //получаем путь к каталогу
             var Path = "";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -145,28 +161,39 @@ namespace WindowsFormsApplication1
                     //обратно в вар для удобства     
                     var xmlDoc = XDocument.Parse(strNumber);
 
+
                     //теперь парсим по элементно xml
                     var packageInfo = from metadata in xmlDoc.Descendants("metadata")
+
                                       select new
                                       {
-                                          id = metadata.Element("id").Value,
-                                          title = metadata.Element("title").Value,
-                                          version = metadata.Element("version").Value,
-                                          authors = metadata.Element("authors").Value,
-                                          owners = metadata.Element("owners").Value,
-                                          summary = metadata.Element("summary").Value,
-                                          description = metadata.Element("description").Value,
-                                          projectUrl = metadata.Element("projectUrl").Value,
-                                          tags = metadata.Element("tags").Value,
-                                          copyright = metadata.Element("copyright").Value,
-                                          licenseUrl = metadata.Element("licenseUrl").Value,
-                                          releaseNotes = metadata.Element("releaseNotes").Value,
-                                          iconUrl = metadata.Element("iconUrl").Value,
-                                          requireLicenseAcceptance = metadata.Element("requireLicenseAcceptance").Value
+                                          id = metadata.TryGetElementValue("id"),
+                                          title = metadata.TryGetElementValue("title"),
+                                          version = metadata.TryGetElementValue("version"),
+                                          authors = metadata.TryGetElementValue("authors"),
+                                          owners = metadata.TryGetElementValue("owners"),
+                                          summary = metadata.TryGetElementValue("summary"),
+                                          description = metadata.TryGetElementValue("description"),
+                                          projectUrl = metadata.TryGetElementValue("projectUrl"),
+                                          tags = metadata.TryGetElementValue("tags"),
+                                          copyright = metadata.TryGetElementValue("copyright"),
+                                          licenseUrl = metadata.TryGetElementValue("licenseUrl"),
+                                          releaseNotes = metadata.TryGetElementValue("releaseNotes"),
+                                          iconUrl = metadata.TryGetElementValue("iconUrl"),
+                                          requireLicenseAcceptance = metadata.TryGetElementValue("requireLicenseAcceptance", "false"),
+                                          admin = metadata.TryGetElementValue("admin", "false"),
+
+                                          docsUrl = metadata.TryGetElementValue("docsUrl", "false"),
+                                          mailingListUrl = metadata.TryGetElementValue("mailingListUrl", "false"),
+                                          bugTrackerUrl = metadata.TryGetElementValue("bugTrackerUrl", "false"),
+                                          projectSourceUrl = metadata.TryGetElementValue("projectSourceUrl", "false"),
+
                                       };
+
                     //заполняем текстовые поля на форме nuspec
                     foreach (var loadInfo in packageInfo)
                     {
+                        //General option
                         textBox1.Text = loadInfo.id;
                         textBox2.Text = loadInfo.tags;
                         textBox3.Text = loadInfo.title;
@@ -181,11 +208,64 @@ namespace WindowsFormsApplication1
                         richTextBox1.Text = loadInfo.description;
                         richTextBox2.Text = loadInfo.releaseNotes;
                         checkBox1.Checked = bool.Parse(loadInfo.requireLicenseAcceptance);
+                        checkBox3.Checked = bool.Parse(loadInfo.admin);
+                        
+                        //Additional options
+                        //DocUrls
+                        if (loadInfo.docsUrl != "false")
+                        {
+                            checkBox6.Checked = true;
+                            textBox15.Text = loadInfo.docsUrl;
+                        }
 
+                        //mailingListUrl
+                        if (loadInfo.mailingListUrl != "false") {
+                            checkBox7.Checked = true;
+                            textBox16.Text = loadInfo.mailingListUrl;
+                        }
+
+                        //bugTrackerUrl
+                        if (loadInfo.bugTrackerUrl != "false")
+                        {
+                            checkBox5.Checked = true;
+                            textBox14.Text = loadInfo.bugTrackerUrl;
+                        }
+
+                        //projectSourceUrl
+                        if (loadInfo.projectSourceUrl != "false")
+                        {
+                            checkBox4.Checked = true;
+                            textBox13.Text = loadInfo.projectSourceUrl;
+                        }
+                        
                     }
 
+                    //DepRead - dependency
+                    //Descendants - считывает всё! все элементы xml дерева
 
+                    var DepInfo = from metadata in xmlDoc.Descendants("dependency")
+                                  
+                                  select new
+                                  {
+                                      idAttribute = metadata.Attribute("id").Value,
+                                      versionAttribute = metadata.Attribute("version").Value                
 
+                                  };
+
+                    foreach (var loadDEPInfo in DepInfo)
+                    {
+                        
+                        textBox12.Text += loadDEPInfo.idAttribute + ";" + loadDEPInfo.versionAttribute + "\r\n";
+                        if (loadDEPInfo.versionAttribute != "0")
+                        {
+                            checkBox2.Checked = true;
+                            textBox12.Visible = true;
+                        }
+                        
+                    }
+
+                    // /DepRead
+                
                     //заполняем chocolateyInstall
                     string instalfile = Path + "\\tools\\chocolateyInstall.ps1";
 
@@ -264,11 +344,12 @@ namespace WindowsFormsApplication1
             using (StreamWriter sw = new StreamWriter(Filename, false, System.Text.Encoding.UTF8))
             //генерируем структуру xml файла
             {
-
+                //Create main(package <->metadata) struct
                 XNamespace aw = "http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd";
                 XElement root = new XElement(aw + "package");
-                XElement child1 = new XElement(aw + "metadata",
+                XElement childMetadata = new XElement(aw + "metadata",
 
+                   
                     new XElement(aw + "id", textBox1.Text),
                     new XElement(aw + "title", textBox3.Text),
                     new XElement(aw + "version", textBox4.Text),
@@ -281,59 +362,80 @@ namespace WindowsFormsApplication1
                     new XElement(aw + "copyright", textBox11.Text),
                     new XElement(aw + "licenseUrl", textBox10.Text),
                     new XElement(aw + "requireLicenseAcceptance", checkBox1.Checked),
+                    new XElement(aw + "admin", checkBox3.Checked),
                     new XElement(aw + "releaseNotes", richTextBox2.Text),
                     new XElement(aw + "iconUrl", textBox8.Text)
-                
-                    );
 
-                XElement child2 = new XElement(aw + "files"
-                    );
-                XElement child3 = new XElement(aw + "file");
+                );
+                /*ADD DOC,MAIL,BUG,PROJECT - URLS*/
+                if (checkBox6.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "docsUrl", textBox15.Text);
+                    childMetadata.Add(temp);
+                }
 
-                child3.SetAttributeValue("src", "tools\\**");
-                child3.SetAttributeValue("target", "tools");
+                if (checkBox7.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "mailingListUrl", textBox16.Text);
+                    childMetadata.Add(temp);
+                }
+
+                if (checkBox5.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "bugTrackerUrl", textBox14.Text);
+                    childMetadata.Add(temp);
+                }
+
+                if (checkBox4.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "projectSourceUrl", textBox13.Text);
+                    childMetadata.Add(temp);
+                }
+                /* /ADD DOC,MAIL,BUG,PROJECT - URLS*/
+
+                XElement childFiles = new XElement(aw + "files"
+                    );
+                XElement childFile = new XElement(aw + "file");
+
+                childFile.SetAttributeValue("src", "tools\\**");
+                childFile.SetAttributeValue("target", "tools");
 
 
                 //Добавляем зависимости/////////////////////
-
-                /*
-                <dependencies>
-                    <dependency id="phantomjs" version="2.0.0" />
-                    <dependency id="python2" version="2.7.10" />
-                </dependencies>
-                */
-
+                
                 if (checkBox2.Checked)
                 {
-                    
-                    XElement child4 = new XElement(aw + "dependencies");
 
-                    
+                    XElement childDependencies = new XElement(aw + "dependencies");
                     String[] deparray = textBox12.Text.Split(new String[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-                    
 
                     foreach (var depstring in deparray)
                     {
-                        XElement child5 = new XElement(aw + "dependency");
+                        XElement childDependency = new XElement(aw + "dependency");
                         string[] deps = depstring.Split(';');
 
                         for (int i = 0; i <= deps.Length; i++) ;
 
-                        child5.SetAttributeValue("id", deps[0]);
-                        child5.SetAttributeValue("version", deps[1]);
-                        child4.Add(child5);
+                        childDependency.SetAttributeValue("id", deps[0]);
+                        childDependency.SetAttributeValue("version", deps[1]);
+                        childDependencies.Add(childDependency);
 
                     }
 
-                    child1.Add(child4);
-                    child2.Add(child3);
-                    
-                    root.Add(child1,child2);
-                }else
+                    childMetadata.Add(childDependencies);
+                    childFiles.Add(childFile);
+
+                    root.Add(childMetadata, childFiles);
+                }
+                else
                 {
                     //если зависимостей нет то nuspec формируем так
-                    child2.Add(child3);
-                    root.Add(child1,child2);
+                    childFiles.Add(childFile);
+                    root.Add(childMetadata, childFiles);
                 }
                 //пишем в файл
                 sw.WriteLine(defaulttext);
@@ -355,19 +457,20 @@ namespace WindowsFormsApplication1
                 su.WriteLine(richTextBox4.Text);
             }
 
-            //создаем пакет
-            //create package
+            //Создаем пакет
+            //Create package
             
             string command = "cd /D " + label14.Text + " & choco pack " + label16.Text + " & pause "+ "& exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K"  + command );
-
+            
             System.Threading.Thread.Sleep(5000);
+            
 
             //MessageBox.Show("Saving");
 
             /* Если создание успешно и создался файл как в шаблоне: qip2012.4.0.9380.nupkg
                 активируем формы для установки/удаления 
-                */
+            */
 
             string PackageFile = label14.Text + "\\" + textBox1.Text + "." + textBox4.Text + ".nupkg";
             if (System.IO.File.Exists(PackageFile))
@@ -390,18 +493,21 @@ namespace WindowsFormsApplication1
                 string chocokey = "choco apiKey -k " + apikey + " -source https://chocolatey.org/ & pause & exit";
                 System.Diagnostics.Process.Start("cmd.exe", @"/K" + chocokey);
             }
-            else {
+            else
+            {
                 MessageBox.Show("API Key may not be null (Canceled)");
             }
         }
 
+        //Activate Depends TextBox
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
             {
                 textBox12.Visible = true;
             }
-            else {
+            else
+            {
                 textBox12.Visible = false;
             }
         }
@@ -428,10 +534,10 @@ namespace WindowsFormsApplication1
                 $silentArgs = '/VERYSILENT /NORESTART /TASKS=""desktopicon,startmenuicon""' 
                 $validExitCodes = @(0) 
                 Install-ChocolateyPackage ""$packageName"" ""$installerType"" ""$silentArgs"" ""$url""   -validExitCodes $validExitCodes";
-            
+
             //Remove Tabulation
             string TemplateExeInstall1 = Regex.Replace(TemplateExeInstall, " {16}", " ");
-            
+
             richTextBox3.Text = TemplateExeInstall1;
         }
 
@@ -458,9 +564,9 @@ namespace WindowsFormsApplication1
         private void uploadPackageToChocolateyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //choco push deskpins.1.30.nupkg
-            
 
-            string UploadPackage = "choco push " + label14.Text+ "\\" +  textBox1.Text + "." + textBox4.Text +".nupkg & pause & exit";
+
+            string UploadPackage = "choco push " + label14.Text + "\\" + textBox1.Text + "." + textBox4.Text + ".nupkg & pause & exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K" + UploadPackage);
             //MessageBox.Show(UploadPackage);
 
@@ -468,7 +574,7 @@ namespace WindowsFormsApplication1
         //install menu
         private void installThisPackageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             string InstallString = "choco install " + textBox1.Text + " -source " + label14.Text + " -y -force -version " + textBox4.Text + " & pause & exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K" + InstallString);
             //MessageBox.Show(InstallString);
@@ -481,11 +587,7 @@ namespace WindowsFormsApplication1
             System.Diagnostics.Process.Start("cmd.exe", @"/K" + UninstallString);
         }
 
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/chocolatey/choco/wiki/CreatePackages");
-        }
-
+        
         private void button11_Click(object sender, EventArgs e)
         {
 
@@ -505,6 +607,93 @@ namespace WindowsFormsApplication1
             AboutForm.ShowDialog();
         }
 
-       
+        //DocsUrl
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked)
+            {
+                textBox15.ReadOnly = false;
+
+            }
+            else
+            {
+                textBox15.ReadOnly = true;
+            }
+        }
+        //mailingListUrl
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox7.Checked)
+            {
+                textBox16.ReadOnly = false;
+            }
+            else
+            {
+                textBox16.ReadOnly = true;
+            }
+        }
+        //bugTrackerUrl
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked)
+            {
+                textBox14.ReadOnly = false;
+            }else
+            {
+                textBox14.ReadOnly = true;
+            }
+        }
+        //projectSourceUrl
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked)
+            {
+
+                textBox13.ReadOnly = false;
+
+            } else
+            {
+                textBox13.ReadOnly = true;
+            }
+        }
+        //Help SubMenu key - Chocomaint - wiki
+        private void chocoMaintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/zersh01/ChocoMain/wiki");
+        }
+        //Help SubMenu key - Chocolatey
+        private void chocoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/chocolatey/choco/wiki/CreatePackages");
+        }
     }
 }
+
+
+//Область дополнительных расширений
+namespace Extension
+{
+    //класс
+    public static class Extension
+    {
+        //метод....получает на вход данные парсинга XElement, если элемент существует
+        //возвращает его значение, если нет или пустое, возвращает значение "по умолчаиню"
+        //которое задаётся вторым параметром при вызове метода. 
+
+        public static string TryGetElementValue(this XElement parentEl, string elementName, string defaultValue = null)
+        {
+            var foundEl = parentEl.Element(elementName);
+
+            if (foundEl != null)
+            {
+                return foundEl.Value;
+            }
+
+            return defaultValue;
+        }
+    }
+}
+
+
+
+

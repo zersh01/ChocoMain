@@ -107,7 +107,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "1.0.0.2";
+            this.label5.Text = "1.0.1.2";
             // 
             // label6
             // 
@@ -135,6 +135,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.ResumeLayout(false);
             this.PerformLayout();
