@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>chocomaint</id>
-    <title>ChocoMaint</title>
-    <version>1.0.0.2</version>
+    <title>ChocoMaint [Unofficial]</title>
+    <version>1.0.1.2</version>
     <authors>S.Parhomenko</authors>
     <owners>zersh</owners>
     <summary>Simple GUI  for create package nupkg</summary>
@@ -18,8 +18,20 @@
     <copyright>S.Parhomenko</copyright>
     <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Change setup version</releaseNotes>
+    <admin>true</admin>
+    <releaseNotes>Add support:
+-Requires Administrative Permission tag
+-docsUrl
+-maillingListUrl
+-bugTrackerUrl
+-projectSourceUrl
+
+BugFix:
+-Dont read exist dependencies from nuspec file
+</releaseNotes>
     <iconUrl>https://rawgit.com/zersh01/ChocoMain/master/Icon.png</iconUrl>
+    <docsUrl>https://github.com/zersh01/ChocoMain/wiki</docsUrl>
+    <projectSourceUrl>https://github.com/zersh01/ChocoMain</projectSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

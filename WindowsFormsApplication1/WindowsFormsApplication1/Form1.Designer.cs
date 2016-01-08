@@ -226,14 +226,14 @@
             this.chocoToolStripMenuItem});
             this.helpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripMenuItem.Image")));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // chocoMaintToolStripMenuItem
             // 
             this.chocoMaintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoMaintToolStripMenuItem.Image")));
             this.chocoMaintToolStripMenuItem.Name = "chocoMaintToolStripMenuItem";
-            this.chocoMaintToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chocoMaintToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.chocoMaintToolStripMenuItem.Text = "ChocoMaint";
             this.chocoMaintToolStripMenuItem.Click += new System.EventHandler(this.chocoMaintToolStripMenuItem_Click);
             // 
@@ -241,7 +241,7 @@
             // 
             this.chocoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoToolStripMenuItem.Image")));
             this.chocoToolStripMenuItem.Name = "chocoToolStripMenuItem";
-            this.chocoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chocoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.chocoToolStripMenuItem.Text = "Chocolatey";
             this.chocoToolStripMenuItem.Click += new System.EventHandler(this.chocoToolStripMenuItem_Click);
             // 
@@ -249,7 +249,7 @@
             // 
             this.aboutToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem1.Image")));
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -340,6 +340,7 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(261, 20);
             this.textBox16.TabIndex = 49;
+            this.toolTip1.SetToolTip(this.textBox16, "points to the forum or email list group for the software");
             // 
             // textBox15
             // 
@@ -348,6 +349,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(261, 20);
             this.textBox15.TabIndex = 48;
+            this.toolTip1.SetToolTip(this.textBox15, "points to the location of the wiki or docs of the software");
             // 
             // textBox14
             // 
@@ -356,7 +358,7 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(305, 20);
             this.textBox14.TabIndex = 47;
-            this.toolTip1.SetToolTip(this.textBox14, "Use rawgit.com - service for add icon");
+            this.toolTip1.SetToolTip(this.textBox14, "points to the location where issues and tickets can be accessed");
             // 
             // textBox13
             // 
@@ -365,7 +367,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(305, 20);
             this.textBox13.TabIndex = 46;
-            this.toolTip1.SetToolTip(this.textBox13, "Use rawgit.com - service for add icon");
+            this.toolTip1.SetToolTip(this.textBox13, "points to the location of the underlying software source");
             // 
             // checkBox7
             // 
@@ -375,8 +377,7 @@
             this.checkBox7.Size = new System.Drawing.Size(90, 17);
             this.checkBox7.TabIndex = 45;
             this.checkBox7.Text = "mailingListUrl ";
-            this.toolTip1.SetToolTip(this.checkBox7, "Check, if your package uses a helper function that requires administrative permis" +
-        "sions. True or false");
+            this.toolTip1.SetToolTip(this.checkBox7, "points to the forum or email list group for the software");
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
@@ -388,8 +389,7 @@
             this.checkBox6.Size = new System.Drawing.Size(65, 17);
             this.checkBox6.TabIndex = 44;
             this.checkBox6.Text = "docsUrl ";
-            this.toolTip1.SetToolTip(this.checkBox6, "Check, if your package uses a helper function that requires administrative permis" +
-        "sions. True or false");
+            this.toolTip1.SetToolTip(this.checkBox6, "points to the location of the wiki or docs of the software");
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
@@ -401,8 +401,7 @@
             this.checkBox5.Size = new System.Drawing.Size(97, 17);
             this.checkBox5.TabIndex = 43;
             this.checkBox5.Text = "bugTrackerUrl ";
-            this.toolTip1.SetToolTip(this.checkBox5, "Check, if your package uses a helper function that requires administrative permis" +
-        "sions. True or false");
+            this.toolTip1.SetToolTip(this.checkBox5, "points to the location where issues and tickets can be accessed");
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
@@ -414,8 +413,7 @@
             this.checkBox4.Size = new System.Drawing.Size(108, 17);
             this.checkBox4.TabIndex = 42;
             this.checkBox4.Text = "projectSourceUrl ";
-            this.toolTip1.SetToolTip(this.checkBox4, "Check, if your package uses a helper function that requires administrative permis" +
-        "sions. True or false");
+            this.toolTip1.SetToolTip(this.checkBox4, "points to the location of the underlying software source");
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
