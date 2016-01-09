@@ -459,15 +459,20 @@ namespace WindowsFormsApplication1
 
             //Создаем пакет
             //Create package
-            
-            string command = "cd /D " + label14.Text + " & choco pack " + label16.Text + " & pause "+ "& exit";
-            System.Diagnostics.Process.Start("cmd.exe", @"/K"  + command );
-            
-            System.Threading.Thread.Sleep(5000);
-            
+            //Если взведён "Save only" выдаём сообщение о сохранении
+            //если нет - создаём пакет
+            if (SaveOnly.Checked)
+            {
+                MessageBox.Show("Saving","ChocoMaint", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string command = "cd /D " + label14.Text + " & choco pack " + label16.Text + " & pause " + "& exit";
+                System.Diagnostics.Process.Start("cmd.exe", @"/K" + command);
 
-            //MessageBox.Show("Saving");
-
+                System.Threading.Thread.Sleep(5000);
+            }
+            
             /* Если создание успешно и создался файл как в шаблоне: qip2012.4.0.9380.nupkg
                 активируем формы для установки/удаления 
             */
@@ -665,6 +670,18 @@ namespace WindowsFormsApplication1
         private void chocoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/chocolatey/choco/wiki/CreatePackages");
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SaveOnly.Checked)
+            {
+                button6.Text = "Save";
+            }
+            else
+            {
+                button6.Text = "Create";
+            }
         }
     }
 }

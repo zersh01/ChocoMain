@@ -49,6 +49,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.nuspec = new System.Windows.Forms.TabPage();
+            this.SaveOnly = new System.Windows.Forms.CheckBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -280,6 +281,7 @@
             // nuspec
             // 
             this.nuspec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.nuspec.Controls.Add(this.SaveOnly);
             this.nuspec.Controls.Add(this.textBox16);
             this.nuspec.Controls.Add(this.textBox15);
             this.nuspec.Controls.Add(this.textBox14);
@@ -333,12 +335,25 @@
             this.nuspec.TabIndex = 0;
             this.nuspec.Text = "nuspec";
             // 
+            // SaveOnly
+            // 
+            this.SaveOnly.AutoSize = true;
+            this.SaveOnly.Location = new System.Drawing.Point(660, 600);
+            this.SaveOnly.Name = "SaveOnly";
+            this.SaveOnly.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SaveOnly.Size = new System.Drawing.Size(73, 17);
+            this.SaveOnly.TabIndex = 50;
+            this.SaveOnly.Text = "Save only";
+            this.toolTip1.SetToolTip(this.SaveOnly, "Save whithout create package");
+            this.SaveOnly.UseVisualStyleBackColor = true;
+            this.SaveOnly.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            // 
             // textBox16
             // 
             this.textBox16.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox16.Location = new System.Drawing.Point(20, 509);
+            this.textBox16.Location = new System.Drawing.Point(315, 509);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(261, 20);
+            this.textBox16.Size = new System.Drawing.Size(305, 20);
             this.textBox16.TabIndex = 49;
             this.toolTip1.SetToolTip(this.textBox16, "points to the forum or email list group for the software");
             // 
@@ -363,16 +378,16 @@
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox13.Location = new System.Drawing.Point(315, 509);
+            this.textBox13.Location = new System.Drawing.Point(20, 509);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(305, 20);
+            this.textBox13.Size = new System.Drawing.Size(261, 20);
             this.textBox13.TabIndex = 46;
             this.toolTip1.SetToolTip(this.textBox13, "points to the location of the underlying software source");
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(20, 486);
+            this.checkBox7.Location = new System.Drawing.Point(315, 486);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(90, 17);
             this.checkBox7.TabIndex = 45;
@@ -408,7 +423,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(315, 486);
+            this.checkBox4.Location = new System.Drawing.Point(20, 486);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(108, 17);
             this.checkBox4.TabIndex = 42;
@@ -1019,6 +1034,7 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.ToolStripMenuItem chocoMaintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chocoToolStripMenuItem;
+        private System.Windows.Forms.CheckBox SaveOnly;
     }
 }
 
