@@ -18,7 +18,6 @@
     <copyright>S.Parhomenko</copyright>
     <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <admin>true</admin>
     <releaseNotes>Add Icon preview;
 
 Add support "Save only" package;
