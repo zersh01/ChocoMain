@@ -4,7 +4,7 @@
   <metadata>
     <id>chocomaint</id>
     <title>ChocoMaint [Unofficial]</title>
-    <version>1.0.1.2</version>
+    <version>1.0.1.3</version>
     <authors>S.Parhomenko</authors>
     <owners>zersh</owners>
     <summary>Simple GUI  for create package nupkg</summary>
@@ -25,6 +25,8 @@
 -maillingListUrl
 -bugTrackerUrl
 -projectSourceUrl
+
+-Save only
 
 BugFix:
 -Dont read exist dependencies from nuspec file

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="90624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="92672">
       <assemblyIdentity name="ChocoMaint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gKSpf5UISLj+Ehv2JeLvDxiKqZlTo3cnzaAQoPVl5E4=</dsig:DigestValue>
+        <dsig:DigestValue>bqWgUDxNPQndW+077gyZGLPygdeicKEgzjtWFt4Gj5k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

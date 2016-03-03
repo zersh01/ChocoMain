@@ -49,6 +49,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.nuspec = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.SaveOnly = new System.Windows.Forms.CheckBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -111,9 +114,11 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label18 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.nuspec.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.chocolateyInstall.SuspendLayout();
             this.chocolateyUninstall.SuspendLayout();
             this.SuspendLayout();
@@ -281,6 +286,10 @@
             // nuspec
             // 
             this.nuspec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.nuspec.Controls.Add(this.label18);
+            this.nuspec.Controls.Add(this.pictureBox1);
+            this.nuspec.Controls.Add(this.textBox17);
+            this.nuspec.Controls.Add(this.checkBox8);
             this.nuspec.Controls.Add(this.SaveOnly);
             this.nuspec.Controls.Add(this.textBox16);
             this.nuspec.Controls.Add(this.textBox15);
@@ -335,6 +344,37 @@
             this.nuspec.TabIndex = 0;
             this.nuspec.Text = "nuspec";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(651, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 139);
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox17.Location = new System.Drawing.Point(309, 458);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(305, 20);
+            this.textBox17.TabIndex = 52;
+            this.toolTip1.SetToolTip(this.textBox17, "points to the location of the underlying software source");
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(309, 435);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(115, 17);
+            this.checkBox8.TabIndex = 51;
+            this.checkBox8.Text = "packageSourceUrl";
+            this.toolTip1.SetToolTip(this.checkBox8, "points to the location of the wiki or docs of the software");
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged_1);
+            // 
             // SaveOnly
             // 
             this.SaveOnly.AutoSize = true;
@@ -351,7 +391,7 @@
             // textBox16
             // 
             this.textBox16.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox16.Location = new System.Drawing.Point(315, 509);
+            this.textBox16.Location = new System.Drawing.Point(309, 560);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(305, 20);
             this.textBox16.TabIndex = 49;
@@ -369,7 +409,7 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox14.Location = new System.Drawing.Point(315, 458);
+            this.textBox14.Location = new System.Drawing.Point(309, 509);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(305, 20);
             this.textBox14.TabIndex = 47;
@@ -387,7 +427,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(315, 486);
+            this.checkBox7.Location = new System.Drawing.Point(309, 537);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(90, 17);
             this.checkBox7.TabIndex = 45;
@@ -411,7 +451,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(315, 435);
+            this.checkBox5.Location = new System.Drawing.Point(309, 486);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(97, 17);
             this.checkBox5.TabIndex = 43;
@@ -469,16 +509,16 @@
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox12.Location = new System.Drawing.Point(652, 25);
+            this.textBox12.Location = new System.Drawing.Point(651, 191);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(203, 147);
+            this.textBox12.Size = new System.Drawing.Size(203, 206);
             this.textBox12.TabIndex = 38;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(760, 5);
+            this.checkBox2.Location = new System.Drawing.Point(759, 171);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox2.Size = new System.Drawing.Size(95, 17);
@@ -926,6 +966,15 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(723, 9);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(106, 13);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Click to Icon preview";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -946,6 +995,7 @@
             this.tabControl1.ResumeLayout(false);
             this.nuspec.ResumeLayout(false);
             this.nuspec.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.chocolateyInstall.ResumeLayout(false);
             this.chocolateyUninstall.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1035,6 +1085,10 @@
         private System.Windows.Forms.ToolStripMenuItem chocoMaintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chocoToolStripMenuItem;
         private System.Windows.Forms.CheckBox SaveOnly;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label18;
     }
 }
 

@@ -185,6 +185,7 @@ namespace WindowsFormsApplication1
 
                                           docsUrl = metadata.TryGetElementValue("docsUrl", "false"),
                                           mailingListUrl = metadata.TryGetElementValue("mailingListUrl", "false"),
+                                          packageSourceUrl = metadata.TryGetElementValue("packageSourceUrl","false"),
                                           bugTrackerUrl = metadata.TryGetElementValue("bugTrackerUrl", "false"),
                                           projectSourceUrl = metadata.TryGetElementValue("projectSourceUrl", "false"),
 
@@ -216,6 +217,13 @@ namespace WindowsFormsApplication1
                         {
                             checkBox6.Checked = true;
                             textBox15.Text = loadInfo.docsUrl;
+                        }
+
+                        //packageSourceUrl
+                        if (loadInfo.packageSourceUrl != "false")
+                        {
+                            checkBox8.Checked = true;
+                            textBox17.Text = loadInfo.packageSourceUrl;
                         }
 
                         //mailingListUrl
@@ -367,7 +375,7 @@ namespace WindowsFormsApplication1
                     new XElement(aw + "iconUrl", textBox8.Text)
 
                 );
-                /*ADD DOC,MAIL,BUG,PROJECT - URLS*/
+                /*ADD DOC,MAIL,BUG,PROJECT,package - URLS*/
                 if (checkBox6.Checked)
                 {
                     XElement temp;
@@ -375,6 +383,14 @@ namespace WindowsFormsApplication1
                     childMetadata.Add(temp);
                 }
 
+                //packageSourceUrl
+                if (checkBox8.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "packageSourceUrl", textBox17.Text);
+                    childMetadata.Add(temp);
+                }
+                //
                 if (checkBox7.Checked)
                 {
                     XElement temp;
@@ -681,6 +697,28 @@ namespace WindowsFormsApplication1
             else
             {
                 button6.Text = "Create";
+            }
+        }
+
+        //packageSourceUrl
+        private void checkBox8_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked)
+            {
+                textBox17.ReadOnly = false;
+
+            }
+            else
+            {
+                textBox17.ReadOnly = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (textBox8.Text != "")
+            {
+                pictureBox1.ImageLocation = textBox8.Text;
             }
         }
     }
