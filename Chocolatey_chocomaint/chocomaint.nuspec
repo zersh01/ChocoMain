@@ -4,7 +4,7 @@
   <metadata>
     <id>chocomaint</id>
     <title>ChocoMaint [Unofficial]</title>
-    <version>1.0.1.3</version>
+    <version>1.0.2.3</version>
     <authors>S.Parhomenko</authors>
     <owners>zersh</owners>
     <summary>Simple GUI  for create package nupkg</summary>
@@ -19,14 +19,17 @@
     <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <admin>true</admin>
-    <releaseNotes>Add support:
+    <releaseNotes>Add Icon preview;
+
+Add support "Save only" package;
+
+Add support:
 -Requires Administrative Permission tag
 -docsUrl
 -maillingListUrl
 -bugTrackerUrl
 -projectSourceUrl
-
--Save only
+-packageSourceUrl
 
 BugFix:
 -Dont read exist dependencies from nuspec file

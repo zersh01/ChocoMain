@@ -181,8 +181,8 @@ namespace WindowsFormsApplication1
                                           releaseNotes = metadata.TryGetElementValue("releaseNotes"),
                                           iconUrl = metadata.TryGetElementValue("iconUrl"),
                                           requireLicenseAcceptance = metadata.TryGetElementValue("requireLicenseAcceptance", "false"),
-                                          admin = metadata.TryGetElementValue("admin", "false"),
 
+                                          admin = metadata.TryGetElementValue("admin", "false"),
                                           docsUrl = metadata.TryGetElementValue("docsUrl", "false"),
                                           mailingListUrl = metadata.TryGetElementValue("mailingListUrl", "false"),
                                           packageSourceUrl = metadata.TryGetElementValue("packageSourceUrl","false"),
@@ -209,9 +209,13 @@ namespace WindowsFormsApplication1
                         richTextBox1.Text = loadInfo.description;
                         richTextBox2.Text = loadInfo.releaseNotes;
                         checkBox1.Checked = bool.Parse(loadInfo.requireLicenseAcceptance);
-                        checkBox3.Checked = bool.Parse(loadInfo.admin);
-                        
+
                         //Additional options
+                        if (loadInfo.admin != "false")
+                        {
+                            checkBox3.Checked = true;
+                            textBox18.Text = loadInfo.admin;
+                        }
                         //DocUrls
                         if (loadInfo.docsUrl != "false")
                         {
@@ -370,12 +374,18 @@ namespace WindowsFormsApplication1
                     new XElement(aw + "copyright", textBox11.Text),
                     new XElement(aw + "licenseUrl", textBox10.Text),
                     new XElement(aw + "requireLicenseAcceptance", checkBox1.Checked),
-                    new XElement(aw + "admin", checkBox3.Checked),
                     new XElement(aw + "releaseNotes", richTextBox2.Text),
                     new XElement(aw + "iconUrl", textBox8.Text)
 
                 );
                 /*ADD DOC,MAIL,BUG,PROJECT,package - URLS*/
+                if (checkBox3.Checked)
+                {
+                    XElement temp;
+                    temp = new XElement(aw + "admin", textBox18.Text);
+                    childMetadata.Add(temp);
+                }
+
                 if (checkBox6.Checked)
                 {
                     XElement temp;
@@ -669,7 +679,6 @@ namespace WindowsFormsApplication1
         {
             if (checkBox4.Checked)
             {
-
                 textBox13.ReadOnly = false;
 
             } else
@@ -720,6 +729,12 @@ namespace WindowsFormsApplication1
             {
                 pictureBox1.ImageLocation = textBox8.Text;
             }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox18.ReadOnly = false;
+            textBox18.Text = "true";
         }
     }
 }
