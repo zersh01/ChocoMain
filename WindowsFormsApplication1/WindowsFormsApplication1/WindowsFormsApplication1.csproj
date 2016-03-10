@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>811025_32.ico</ApplicationIcon>
+    <ApplicationIcon>Icon48.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>46792E130C21EF57E6668818BBCAB80074741456</ManifestCertificateThumbprint>
@@ -67,6 +67,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -121,11 +122,14 @@
     <None Include="WindowsFormsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="811025_32.ico" />
     <Content Include="icon.ico" />
+    <Content Include="Icon48.ico" />
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -12,8 +12,9 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
 using Microsoft.VisualBasic;
-
-
+using System.Diagnostics;
+using System.Net;
+using System.Configuration;
 
 namespace WindowsFormsApplication1
 {
@@ -28,6 +29,19 @@ namespace WindowsFormsApplication1
             textBox12.Visible = false;
             button11.Visible = false;
             button12.Visible = false;
+
+            //Check autoupdate flag
+            string AutoChekUpdate = ConfigurationManager.AppSettings["AutoChekUpdate"];
+            if (AutoChekUpdate == "1")
+            {
+                onStartToolStripMenuItem.Checked = true; 
+                chekNowToolStripMenuItem.PerformClick();
+            }
+            else
+            {
+                onStartToolStripMenuItem.Checked = false;
+            }
+            //Check autoupdate flag
         }
 
 
@@ -110,7 +124,9 @@ namespace WindowsFormsApplication1
             //выбираем файл
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             //стартовый диск (в релизе изменить на С)
-            openFileDialog1.InitialDirectory = "C:\\";
+            string LastDir = ConfigurationManager.AppSettings["LastDir"];
+            //openFileDialog1.InitialDirectory = "C:\\";
+            openFileDialog1.InitialDirectory = LastDir;
             openFileDialog1.Filter = "nuspec files (*.nuspec)|*.nuspec|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 1;
             openFileDialog1.RestoreDirectory = true;
@@ -148,6 +164,12 @@ namespace WindowsFormsApplication1
             //глобальное поле для использования в кнопках
             label16.Text = openFileDialog1.FileName;
             label14.Text = Path;
+            ////save to config file -  last dir
+            Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+            config.AppSettings.Settings["LastDir"].Value = Path;
+            config.Save(ConfigurationSaveMode.Minimal);
+            //////////
+
             {
                 try
                 {
@@ -595,12 +617,9 @@ namespace WindowsFormsApplication1
         private void uploadPackageToChocolateyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //choco push deskpins.1.30.nupkg
-
-
             string UploadPackage = "choco push " + label14.Text + "\\" + textBox1.Text + "." + textBox4.Text + ".nupkg & pause & exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K" + UploadPackage);
             //MessageBox.Show(UploadPackage);
-
         }
         //install menu
         private void installThisPackageToolStripMenuItem_Click(object sender, EventArgs e)
@@ -623,13 +642,43 @@ namespace WindowsFormsApplication1
         {
 
             string InstallString = "choco install " + textBox1.Text + " -source " + label14.Text + " -y -force -version " + textBox4.Text + " & pause & exit";
-            System.Diagnostics.Process.Start("cmd.exe", @"/K" + InstallString);
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + InstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             string UninstallString = "choco uninstall " + textBox1.Text + " -a -y & pause & exit";
-            System.Diagnostics.Process.Start("cmd.exe", @"/K" + UninstallString);
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + UninstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
         }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -736,6 +785,128 @@ namespace WindowsFormsApplication1
             textBox18.ReadOnly = false;
             textBox18.Text = "true";
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            //Запуск необходимой команды от имени администратора.
+            //либо другого пользователя, на выбор, если включён UAC
+            string InstallString = "powershell.exe -NoProfile -NoLogo -ExecutionPolicy Bypass -Command \"[System.Threading.Thread]::CurrentThread.CurrentCulture = '';[System.Threading.Thread]::CurrentThread.CurrentUICulture = ''; & import-module -name 'C:\\ProgramData\\chocolatey\\helpers\\chocolateyInstaller.psm1'; & 'C:\\ProgramData\\chocolatey\\helpers\\chocolateyScriptRunner.ps1' -packageScript '" + label14.Text + "\\tools\\chocolateyInstall.ps1' -installArguments '' -packageParameters ''";
+            
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+            
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + InstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
+            
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string UnInstallString = "powershell.exe -NoProfile -NoLogo -ExecutionPolicy Bypass -Command \"[System.Threading.Thread]::CurrentThread.CurrentCulture = '';[System.Threading.Thread]::CurrentThread.CurrentUICulture = ''; & import-module -name 'C:\\ProgramData\\chocolatey\\helpers\\chocolateyInstaller.psm1'; & 'C:\\ProgramData\\chocolatey\\helpers\\chocolateyScriptRunner.ps1' -packageScript '" + label14.Text + "\\tools\\chocolateyUninstall.ps1' -installArguments '' -packageParameters ''";
+
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + UnInstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
+
+        }
+        
+        private void chekNowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           //First check internet connection
+            try
+            {
+                using (var client = new WebClient())
+                using (var stream = client.OpenRead("http://www.google.com"))
+                {
+                    //If available -> Check update
+                    string TempDir = Path.GetTempPath();
+                    WebClient webClient = new WebClient();
+                    webClient.DownloadFile("https://raw.githubusercontent.com/zersh01/ChocoMain/master/InstallChocoMaint/latest.txt", TempDir + "\\latest.txt");
+
+                string LatestVersion = TempDir + "\\latest.txt";
+
+                using (StreamReader sr = new StreamReader(LatestVersion))
+                {
+                    string CurVersion = textBox19.Text;
+                    string NewVersion = sr.ReadToEnd();
+
+                    if (CurVersion != NewVersion)
+                    {
+
+                            textBox19.ForeColor = Color.DarkRed;
+                            textBox19.BackColor = Color.Yellow;
+                            textBox19.Text = NewVersion;
+
+                            ToolTip updtooltip = new ToolTip();
+                            updtooltip.SetToolTip(textBox19, "Avalible new version. Press double click to go websuite.");
+
+                            //Close and Delete file
+                            sr.Close();
+                        System.IO.File.Delete(LatestVersion);
+                        }
+                        else
+                    {
+                        //Close and Delete file latest
+                        sr.Close();
+                        System.IO.File.Delete(LatestVersion);
+                    }
+                }
+              }
+            }
+            catch
+            {
+                MessageBox.Show("Don't check updates. No Internet Connection. You may disable auto check in Help menu.");
+            }
+        }
+
+        private void onStartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Change settings AutoChekUpdate
+            if (onStartToolStripMenuItem.Checked)
+            {
+                Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+                config.AppSettings.Settings["AutoChekUpdate"].Value = "1";
+                config.Save(ConfigurationSaveMode.Minimal);
+            }
+            else
+            {
+                Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+                config.AppSettings.Settings["AutoChekUpdate"].Value = "0";
+                config.Save(ConfigurationSaveMode.Minimal);
+            }
+            
+        }
+
+        private void textBox19_Click(object sender, EventArgs e)
+        {
+            //go web-site 
+            System.Diagnostics.Process.Start("https://chocolatey.org/packages/chocomaint/"+textBox19.Text);
+        }
+        
     }
 }
 

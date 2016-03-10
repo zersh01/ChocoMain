@@ -35,7 +35,8 @@ BugFix:
 </releaseNotes>
     <iconUrl>https://rawgit.com/zersh01/ChocoMain/master/Icon.png</iconUrl>
     <docsUrl>https://github.com/zersh01/ChocoMain/wiki</docsUrl>
-    <projectSourceUrl>https://github.com/zersh01/ChocoMain</projectSourceUrl>
+    <packageSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/Chocolatey_chocomaint</packageSourceUrl>
+    <projectSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/WindowsFormsApplication1</projectSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
