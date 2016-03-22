@@ -44,10 +44,13 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chocoMaintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chocoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.checkUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.onStartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chekNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.russianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -133,195 +136,184 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.AutoSize = false;
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.aboutToolStripMenuItem,
             this.exitToolStripMenuItem2});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(874, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.toolTip1.SetToolTip(this.menuStrip1, resources.GetString("menuStrip1.ToolTip"));
             // 
             // fileToolStripMenuItem
             // 
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openNuspecToolStripMenuItem,
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
-            this.fileToolStripMenuItem.Text = "File";
             // 
             // openNuspecToolStripMenuItem
             // 
-            this.openNuspecToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openNuspecToolStripMenuItem.Image")));
+            resources.ApplyResources(this.openNuspecToolStripMenuItem, "openNuspecToolStripMenuItem");
             this.openNuspecToolStripMenuItem.Name = "openNuspecToolStripMenuItem";
-            this.openNuspecToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.openNuspecToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.openNuspecToolStripMenuItem.Text = "New";
             this.openNuspecToolStripMenuItem.Click += new System.EventHandler(this.openNuspecToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.exitToolStripMenuItem.Text = "Open nuspec...";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
-            this.exitToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem1.Image")));
+            resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
-            this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // toolsToolStripMenuItem
             // 
+            resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.installThisPackageToolStripMenuItem,
             this.uninstallThisPackageToolStripMenuItem,
             this.uploadPackageToChocolateyToolStripMenuItem,
             this.enterToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // installThisPackageToolStripMenuItem
             // 
-            this.installThisPackageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("installThisPackageToolStripMenuItem.Image")));
+            resources.ApplyResources(this.installThisPackageToolStripMenuItem, "installThisPackageToolStripMenuItem");
             this.installThisPackageToolStripMenuItem.Name = "installThisPackageToolStripMenuItem";
-            this.installThisPackageToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.installThisPackageToolStripMenuItem.Text = "Install this package";
             this.installThisPackageToolStripMenuItem.Click += new System.EventHandler(this.installThisPackageToolStripMenuItem_Click);
             // 
             // uninstallThisPackageToolStripMenuItem
             // 
-            this.uninstallThisPackageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("uninstallThisPackageToolStripMenuItem.Image")));
+            resources.ApplyResources(this.uninstallThisPackageToolStripMenuItem, "uninstallThisPackageToolStripMenuItem");
             this.uninstallThisPackageToolStripMenuItem.Name = "uninstallThisPackageToolStripMenuItem";
-            this.uninstallThisPackageToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.uninstallThisPackageToolStripMenuItem.Text = "Uninstall this package";
             this.uninstallThisPackageToolStripMenuItem.Click += new System.EventHandler(this.uninstallThisPackageToolStripMenuItem_Click);
             // 
             // uploadPackageToChocolateyToolStripMenuItem
             // 
-            this.uploadPackageToChocolateyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("uploadPackageToChocolateyToolStripMenuItem.Image")));
+            resources.ApplyResources(this.uploadPackageToChocolateyToolStripMenuItem, "uploadPackageToChocolateyToolStripMenuItem");
             this.uploadPackageToChocolateyToolStripMenuItem.Name = "uploadPackageToChocolateyToolStripMenuItem";
-            this.uploadPackageToChocolateyToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.uploadPackageToChocolateyToolStripMenuItem.Text = "Upload package to Chocolatey";
             this.uploadPackageToChocolateyToolStripMenuItem.Click += new System.EventHandler(this.uploadPackageToChocolateyToolStripMenuItem_Click);
             // 
             // enterToolStripMenuItem
             // 
-            this.enterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("enterToolStripMenuItem.Image")));
+            resources.ApplyResources(this.enterToolStripMenuItem, "enterToolStripMenuItem");
             this.enterToolStripMenuItem.Name = "enterToolStripMenuItem";
-            this.enterToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.enterToolStripMenuItem.Text = "Enter API Key";
             this.enterToolStripMenuItem.Click += new System.EventHandler(this.enterToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem,
-            this.aboutToolStripMenuItem1,
-            this.checkUpdateToolStripMenuItem});
+            this.checkUpdateToolStripMenuItem,
+            this.languagesToolStripMenuItem,
+            this.aboutToolStripMenuItem1});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.aboutToolStripMenuItem.Text = "Help";
             // 
             // helpToolStripMenuItem
             // 
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.chocoMaintToolStripMenuItem,
             this.chocoToolStripMenuItem});
-            this.helpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripMenuItem.Image")));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.helpToolStripMenuItem.Text = "Help";
             // 
             // chocoMaintToolStripMenuItem
             // 
-            this.chocoMaintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoMaintToolStripMenuItem.Image")));
+            resources.ApplyResources(this.chocoMaintToolStripMenuItem, "chocoMaintToolStripMenuItem");
             this.chocoMaintToolStripMenuItem.Name = "chocoMaintToolStripMenuItem";
-            this.chocoMaintToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.chocoMaintToolStripMenuItem.Text = "ChocoMaint";
             this.chocoMaintToolStripMenuItem.Click += new System.EventHandler(this.chocoMaintToolStripMenuItem_Click);
             // 
             // chocoToolStripMenuItem
             // 
-            this.chocoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chocoToolStripMenuItem.Image")));
+            resources.ApplyResources(this.chocoToolStripMenuItem, "chocoToolStripMenuItem");
             this.chocoToolStripMenuItem.Name = "chocoToolStripMenuItem";
-            this.chocoToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.chocoToolStripMenuItem.Text = "Chocolatey";
             this.chocoToolStripMenuItem.Click += new System.EventHandler(this.chocoToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem1
-            // 
-            this.aboutToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem1.Image")));
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(140, 22);
-            this.aboutToolStripMenuItem1.Text = "About";
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // checkUpdateToolStripMenuItem
             // 
+            resources.ApplyResources(this.checkUpdateToolStripMenuItem, "checkUpdateToolStripMenuItem");
             this.checkUpdateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.onStartToolStripMenuItem,
             this.chekNowToolStripMenuItem});
-            this.checkUpdateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("checkUpdateToolStripMenuItem.Image")));
             this.checkUpdateToolStripMenuItem.Name = "checkUpdateToolStripMenuItem";
-            this.checkUpdateToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.checkUpdateToolStripMenuItem.Text = "Check update";
             // 
             // onStartToolStripMenuItem
             // 
+            resources.ApplyResources(this.onStartToolStripMenuItem, "onStartToolStripMenuItem");
             this.onStartToolStripMenuItem.Checked = true;
             this.onStartToolStripMenuItem.CheckOnClick = true;
             this.onStartToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.onStartToolStripMenuItem.Name = "onStartToolStripMenuItem";
-            this.onStartToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.onStartToolStripMenuItem.Text = "On start Chocomaint";
             this.onStartToolStripMenuItem.Click += new System.EventHandler(this.onStartToolStripMenuItem_Click);
             // 
             // chekNowToolStripMenuItem
             // 
-            this.chekNowToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("chekNowToolStripMenuItem.Image")));
+            resources.ApplyResources(this.chekNowToolStripMenuItem, "chekNowToolStripMenuItem");
             this.chekNowToolStripMenuItem.Name = "chekNowToolStripMenuItem";
-            this.chekNowToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.chekNowToolStripMenuItem.Text = "Check now";
             this.chekNowToolStripMenuItem.Click += new System.EventHandler(this.chekNowToolStripMenuItem_Click);
+            // 
+            // languagesToolStripMenuItem
+            // 
+            resources.ApplyResources(this.languagesToolStripMenuItem, "languagesToolStripMenuItem");
+            this.languagesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.russianToolStripMenuItem});
+            this.languagesToolStripMenuItem.Name = "languagesToolStripMenuItem";
+            // 
+            // englishToolStripMenuItem
+            // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Checked = true;
+            this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // russianToolStripMenuItem
+            // 
+            resources.ApplyResources(this.russianToolStripMenuItem, "russianToolStripMenuItem");
+            this.russianToolStripMenuItem.Checked = true;
+            this.russianToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.russianToolStripMenuItem.Name = "russianToolStripMenuItem";
+            this.russianToolStripMenuItem.Click += new System.EventHandler(this.russianToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.aboutToolStripMenuItem1, "aboutToolStripMenuItem1");
+            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem2
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem2, "exitToolStripMenuItem2");
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem2.Text = "Exit";
             this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.nuspec);
             this.tabControl1.Controls.Add(this.chocolateyInstall);
             this.tabControl1.Controls.Add(this.chocolateyUninstall);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(874, 654);
-            this.tabControl1.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.tabControl1, resources.GetString("tabControl1.ToolTip"));
             // 
             // nuspec
             // 
+            resources.ApplyResources(this.nuspec, "nuspec");
             this.nuspec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
             this.nuspec.Controls.Add(this.label19);
             this.nuspec.Controls.Add(this.textBox19);
@@ -377,538 +369,387 @@
             this.nuspec.Controls.Add(this.label2);
             this.nuspec.Controls.Add(this.label1);
             this.nuspec.Controls.Add(this.button1);
-            this.nuspec.Location = new System.Drawing.Point(4, 22);
             this.nuspec.Name = "nuspec";
-            this.nuspec.Padding = new System.Windows.Forms.Padding(3);
-            this.nuspec.Size = new System.Drawing.Size(866, 628);
-            this.nuspec.TabIndex = 0;
-            this.nuspec.Text = "nuspec";
+            this.toolTip1.SetToolTip(this.nuspec, resources.GetString("nuspec.ToolTip"));
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(753, 608);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 13);
-            this.label19.TabIndex = 58;
-            this.label19.Text = "Version";
+            this.toolTip1.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
             // 
             // textBox19
             // 
+            resources.ApplyResources(this.textBox19, "textBox19");
             this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox19.Location = new System.Drawing.Point(797, 605);
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(57, 20);
-            this.textBox19.TabIndex = 57;
-            this.textBox19.Text = "1.0.3.3";
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.textBox19, "This version");
+            this.toolTip1.SetToolTip(this.textBox19, resources.GetString("textBox19.ToolTip"));
             this.textBox19.Click += new System.EventHandler(this.textBox19_Click);
             // 
             // textBox18
             // 
+            resources.ApplyResources(this.textBox18, "textBox18");
             this.textBox18.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox18.Location = new System.Drawing.Point(315, 566);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(57, 20);
-            this.textBox18.TabIndex = 56;
-            this.toolTip1.SetToolTip(this.textBox18, "True or false. If check default - true");
+            this.toolTip1.SetToolTip(this.textBox18, resources.GetString("textBox18.ToolTip"));
             // 
             // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(315, 543);
+            resources.ApplyResources(this.checkBox3, "checkBox3");
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(192, 17);
-            this.checkBox3.TabIndex = 55;
-            this.checkBox3.Text = "Requires administrative permissions";
-            this.toolTip1.SetToolTip(this.checkBox3, "points to the location of the wiki or docs of the software");
+            this.toolTip1.SetToolTip(this.checkBox3, resources.GetString("checkBox3.ToolTip"));
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(723, 9);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 13);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "Click to Icon preview";
+            this.toolTip1.SetToolTip(this.label18, resources.GetString("label18.ToolTip"));
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(651, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 139);
-            this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox17
             // 
+            resources.ApplyResources(this.textBox17, "textBox17");
             this.textBox17.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox17.Location = new System.Drawing.Point(20, 513);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(261, 20);
-            this.textBox17.TabIndex = 52;
-            this.toolTip1.SetToolTip(this.textBox17, "points to the location of the underlying software source");
+            this.toolTip1.SetToolTip(this.textBox17, resources.GetString("textBox17.ToolTip"));
             // 
             // checkBox8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(20, 490);
+            resources.ApplyResources(this.checkBox8, "checkBox8");
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(115, 17);
-            this.checkBox8.TabIndex = 51;
-            this.checkBox8.Text = "packageSourceUrl";
-            this.toolTip1.SetToolTip(this.checkBox8, "points to the location of the wiki or docs of the software");
+            this.toolTip1.SetToolTip(this.checkBox8, resources.GetString("checkBox8.ToolTip"));
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged_1);
             // 
             // SaveOnly
             // 
-            this.SaveOnly.AutoSize = true;
-            this.SaveOnly.Location = new System.Drawing.Point(651, 561);
+            resources.ApplyResources(this.SaveOnly, "SaveOnly");
             this.SaveOnly.Name = "SaveOnly";
-            this.SaveOnly.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SaveOnly.Size = new System.Drawing.Size(73, 17);
-            this.SaveOnly.TabIndex = 50;
-            this.SaveOnly.Text = "Save only";
-            this.toolTip1.SetToolTip(this.SaveOnly, "Save whithout create package");
+            this.toolTip1.SetToolTip(this.SaveOnly, resources.GetString("SaveOnly.ToolTip"));
             this.SaveOnly.UseVisualStyleBackColor = true;
             this.SaveOnly.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // textBox16
             // 
+            resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox16.Location = new System.Drawing.Point(315, 513);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(305, 20);
-            this.textBox16.TabIndex = 49;
-            this.toolTip1.SetToolTip(this.textBox16, "points to the forum or email list group for the software");
+            this.toolTip1.SetToolTip(this.textBox16, resources.GetString("textBox16.ToolTip"));
             // 
             // textBox15
             // 
+            resources.ApplyResources(this.textBox15, "textBox15");
             this.textBox15.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox15.Location = new System.Drawing.Point(20, 412);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(261, 20);
-            this.textBox15.TabIndex = 48;
-            this.toolTip1.SetToolTip(this.textBox15, "points to the location of the wiki or docs of the software");
+            this.toolTip1.SetToolTip(this.textBox15, resources.GetString("textBox15.ToolTip"));
             // 
             // textBox14
             // 
+            resources.ApplyResources(this.textBox14, "textBox14");
             this.textBox14.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox14.Location = new System.Drawing.Point(315, 462);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(305, 20);
-            this.textBox14.TabIndex = 47;
-            this.toolTip1.SetToolTip(this.textBox14, "points to the location where issues and tickets can be accessed");
+            this.toolTip1.SetToolTip(this.textBox14, resources.GetString("textBox14.ToolTip"));
             // 
             // textBox13
             // 
+            resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox13.Location = new System.Drawing.Point(20, 462);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(261, 20);
-            this.textBox13.TabIndex = 46;
-            this.toolTip1.SetToolTip(this.textBox13, "points to the location of the underlying software source");
+            this.toolTip1.SetToolTip(this.textBox13, resources.GetString("textBox13.ToolTip"));
             // 
             // checkBox7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(315, 490);
+            resources.ApplyResources(this.checkBox7, "checkBox7");
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(90, 17);
-            this.checkBox7.TabIndex = 45;
-            this.checkBox7.Text = "mailingListUrl ";
-            this.toolTip1.SetToolTip(this.checkBox7, "points to the forum or email list group for the software");
+            this.toolTip1.SetToolTip(this.checkBox7, resources.GetString("checkBox7.ToolTip"));
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(20, 389);
+            resources.ApplyResources(this.checkBox6, "checkBox6");
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(65, 17);
-            this.checkBox6.TabIndex = 44;
-            this.checkBox6.Text = "docsUrl ";
-            this.toolTip1.SetToolTip(this.checkBox6, "points to the location of the wiki or docs of the software");
+            this.toolTip1.SetToolTip(this.checkBox6, resources.GetString("checkBox6.ToolTip"));
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(315, 439);
+            resources.ApplyResources(this.checkBox5, "checkBox5");
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(97, 17);
-            this.checkBox5.TabIndex = 43;
-            this.checkBox5.Text = "bugTrackerUrl ";
-            this.toolTip1.SetToolTip(this.checkBox5, "points to the location where issues and tickets can be accessed");
+            this.toolTip1.SetToolTip(this.checkBox5, resources.GetString("checkBox5.ToolTip"));
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(20, 439);
+            resources.ApplyResources(this.checkBox4, "checkBox4");
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(108, 17);
-            this.checkBox4.TabIndex = 42;
-            this.checkBox4.Text = "projectSourceUrl ";
-            this.toolTip1.SetToolTip(this.checkBox4, "points to the location of the underlying software source");
+            this.toolTip1.SetToolTip(this.checkBox4, resources.GetString("checkBox4.ToolTip"));
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(730, 466);
+            resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(124, 36);
-            this.button12.TabIndex = 40;
-            this.button12.Text = "Uninstall this package";
-            this.toolTip1.SetToolTip(this.button12, "Install this package");
+            this.toolTip1.SetToolTip(this.button12, resources.GetString("button12.ToolTip"));
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(730, 424);
+            resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(124, 36);
-            this.button11.TabIndex = 39;
-            this.button11.Text = "Install this package";
-            this.toolTip1.SetToolTip(this.button11, "Install this package");
+            this.toolTip1.SetToolTip(this.button11, resources.GetString("button11.ToolTip"));
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // textBox12
             // 
+            resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox12.Location = new System.Drawing.Point(651, 191);
-            this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(203, 206);
-            this.textBox12.TabIndex = 38;
+            this.toolTip1.SetToolTip(this.textBox12, resources.GetString("textBox12.ToolTip"));
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(759, 171);
+            resources.ApplyResources(this.checkBox2, "checkBox2");
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox2.Size = new System.Drawing.Size(95, 17);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "Dependencies";
-            this.toolTip1.SetToolTip(this.checkBox2, "Check if you want add dependencies");
+            this.toolTip1.SetToolTip(this.checkBox2, resources.GetString("checkBox2.ToolTip"));
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(366, 609);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 13);
-            this.label14.TabIndex = 35;
+            this.toolTip1.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(306, 609);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(47, 13);
-            this.label15.TabIndex = 34;
-            this.label15.Text = "Work dir";
+            this.toolTip1.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(53, 609);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 13);
-            this.label16.TabIndex = 33;
+            this.toolTip1.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(11, 609);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(38, 13);
-            this.label17.TabIndex = 32;
-            this.label17.Text = "Name:";
+            this.toolTip1.SetToolTip(this.label17, resources.GetString("label17.ToolTip"));
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(730, 550);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 36);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Create";
-            this.toolTip1.SetToolTip(this.button6, "Create package");
+            this.toolTip1.SetToolTip(this.button6, resources.GetString("button6.ToolTip"));
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox11
             // 
+            resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox11.Location = new System.Drawing.Point(20, 280);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(261, 20);
-            this.textBox11.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.textBox11, resources.GetString("textBox11.ToolTip"));
             // 
             // textBox10
             // 
+            resources.ApplyResources(this.textBox10, "textBox10");
             this.textBox10.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox10.Location = new System.Drawing.Point(20, 322);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(261, 20);
-            this.textBox10.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox10, resources.GetString("textBox10.ToolTip"));
             // 
             // textBox9
             // 
+            resources.ApplyResources(this.textBox9, "textBox9");
             this.textBox9.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox9.Location = new System.Drawing.Point(20, 363);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(261, 20);
-            this.textBox9.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox9, resources.GetString("textBox9.ToolTip"));
             // 
             // textBox8
             // 
+            resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox8.Location = new System.Drawing.Point(315, 412);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(305, 20);
-            this.textBox8.TabIndex = 14;
-            this.toolTip1.SetToolTip(this.textBox8, "Use rawgit.com - service for add icon");
+            this.toolTip1.SetToolTip(this.textBox8, resources.GetString("textBox8.ToolTip"));
             // 
             // textBox7
             // 
+            resources.ApplyResources(this.textBox7, "textBox7");
             this.textBox7.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox7.Location = new System.Drawing.Point(20, 241);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(261, 20);
-            this.textBox7.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.textBox7, "Short description");
+            this.toolTip1.SetToolTip(this.textBox7, resources.GetString("textBox7.ToolTip"));
             // 
             // textBox6
             // 
+            resources.ApplyResources(this.textBox6, "textBox6");
             this.textBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox6.Location = new System.Drawing.Point(20, 193);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(127, 20);
-            this.textBox6.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.textBox6, "Author Chocolatey package/Your name");
+            this.toolTip1.SetToolTip(this.textBox6, resources.GetString("textBox6.ToolTip"));
             // 
             // textBox5
             // 
+            resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox5.Location = new System.Drawing.Point(20, 154);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 20);
-            this.textBox5.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.textBox5, "Author of software");
+            this.toolTip1.SetToolTip(this.textBox5, resources.GetString("textBox5.ToolTip"));
             // 
             // textBox4
             // 
+            resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Location = new System.Drawing.Point(20, 114);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 20);
-            this.textBox4.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.textBox4, "Software version");
+            this.toolTip1.SetToolTip(this.textBox4, resources.GetString("textBox4.ToolTip"));
             // 
             // textBox3
             // 
+            resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(20, 72);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 20);
-            this.textBox3.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.textBox3, "Title name on web site");
+            this.toolTip1.SetToolTip(this.textBox3, resources.GetString("textBox3.ToolTip"));
             // 
             // textBox2
             // 
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(315, 363);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(305, 20);
-            this.textBox2.TabIndex = 13;
-            this.toolTip1.SetToolTip(this.textBox2, "Enter tags, use separator  blank space");
+            this.toolTip1.SetToolTip(this.textBox2, resources.GetString("textBox2.ToolTip"));
             // 
             // richTextBox2
             // 
+            resources.ApplyResources(this.richTextBox2, "richTextBox2");
             this.richTextBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.richTextBox2.Location = new System.Drawing.Point(315, 191);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(305, 126);
-            this.richTextBox2.TabIndex = 12;
-            this.richTextBox2.Text = "";
+            this.toolTip1.SetToolTip(this.richTextBox2, resources.GetString("richTextBox2.ToolTip"));
             // 
             // textBox1
             // 
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Location = new System.Drawing.Point(20, 25);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 20);
-            this.textBox1.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.textBox1, "Package name in chocolatey.org");
+            this.toolTip1.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
             // 
             // richTextBox1
             // 
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.richTextBox1.Location = new System.Drawing.Point(315, 25);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(305, 147);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
+            this.toolTip1.SetToolTip(this.richTextBox1, resources.GetString("richTextBox1.ToolTip"));
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(312, 9);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 13);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Description";
+            this.toolTip1.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 566);
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(161, 17);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "RrequireLicenseAcceptance";
-            this.toolTip1.SetToolTip(this.checkBox1, "True or false");
+            this.toolTip1.SetToolTip(this.checkBox1, resources.GetString("checkBox1.ToolTip"));
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(312, 396);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "IconUrl";
+            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(17, 306);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "LicenseUrl";
+            this.toolTip1.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(312, 175);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "ReleaseNotes";
+            this.toolTip1.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 264);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Copyright";
+            this.toolTip1.SetToolTip(this.label9, resources.GetString("label9.ToolTip"));
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(312, 347);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Tags";
+            this.toolTip1.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 347);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "ProjectUrl";
+            this.toolTip1.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 225);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Summary";
+            this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 177);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Owners";
+            this.toolTip1.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 138);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Authors";
+            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 98);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Version";
+            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 56);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Title";
+            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ID";
+            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(730, 508);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 36);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Next";
-            this.toolTip1.SetToolTip(this.button1, "Next tabs");
+            this.toolTip1.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // chocolateyInstall
             // 
+            resources.ApplyResources(this.chocolateyInstall, "chocolateyInstall");
             this.chocolateyInstall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
             this.chocolateyInstall.Controls.Add(this.button13);
             this.chocolateyInstall.Controls.Add(this.button5);
@@ -917,176 +758,137 @@
             this.chocolateyInstall.Controls.Add(this.button7);
             this.chocolateyInstall.Controls.Add(this.button3);
             this.chocolateyInstall.Controls.Add(this.button2);
-            this.chocolateyInstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyInstall.Name = "chocolateyInstall";
-            this.chocolateyInstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyInstall.Size = new System.Drawing.Size(866, 628);
-            this.chocolateyInstall.TabIndex = 1;
-            this.chocolateyInstall.Text = "chocolateyInstall";
+            this.toolTip1.SetToolTip(this.chocolateyInstall, resources.GetString("chocolateyInstall.ToolTip"));
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(739, 92);
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(121, 37);
-            this.button13.TabIndex = 33;
-            this.button13.Text = "RUN";
-            this.toolTip1.SetToolTip(this.button13, "Small how-to about chocolateyInstall scripts");
+            this.toolTip1.SetToolTip(this.button13, resources.GetString("button13.ToolTip"));
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(739, 6);
+            resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 37);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "HELP";
-            this.toolTip1.SetToolTip(this.button5, "Small how-to about chocolateyInstall scripts");
+            this.toolTip1.SetToolTip(this.button5, resources.GetString("button5.ToolTip"));
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(739, 49);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 37);
-            this.button4.TabIndex = 31;
             this.button4.TabStop = false;
-            this.button4.Text = "Sample EXE";
-            this.toolTip1.SetToolTip(this.button4, "Add template code for exe");
+            this.toolTip1.SetToolTip(this.button4, resources.GetString("button4.ToolTip"));
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // richTextBox3
             // 
+            resources.ApplyResources(this.richTextBox3, "richTextBox3");
             this.richTextBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.richTextBox3.Location = new System.Drawing.Point(3, 3);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(730, 431);
-            this.richTextBox3.TabIndex = 30;
-            this.richTextBox3.Text = "";
-            this.richTextBox3.WordWrap = false;
+            this.toolTip1.SetToolTip(this.richTextBox3, resources.GetString("richTextBox3.ToolTip"));
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(739, 589);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 36);
-            this.button7.TabIndex = 29;
-            this.button7.Text = "Create";
-            this.toolTip1.SetToolTip(this.button7, "Create package");
+            this.toolTip1.SetToolTip(this.button7, resources.GetString("button7.ToolTip"));
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(8, 440);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 36);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Prev";
-            this.toolTip1.SetToolTip(this.button3, "Previous Tab");
+            this.toolTip1.SetToolTip(this.button3, resources.GetString("button3.ToolTip"));
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(609, 440);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 36);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Next";
-            this.toolTip1.SetToolTip(this.button2, "Next Tab");
+            this.toolTip1.SetToolTip(this.button2, resources.GetString("button2.ToolTip"));
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // chocolateyUninstall
             // 
+            resources.ApplyResources(this.chocolateyUninstall, "chocolateyUninstall");
             this.chocolateyUninstall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
             this.chocolateyUninstall.Controls.Add(this.button14);
             this.chocolateyUninstall.Controls.Add(this.button10);
             this.chocolateyUninstall.Controls.Add(this.richTextBox4);
             this.chocolateyUninstall.Controls.Add(this.button8);
             this.chocolateyUninstall.Controls.Add(this.button9);
-            this.chocolateyUninstall.Location = new System.Drawing.Point(4, 22);
             this.chocolateyUninstall.Name = "chocolateyUninstall";
-            this.chocolateyUninstall.Padding = new System.Windows.Forms.Padding(3);
-            this.chocolateyUninstall.Size = new System.Drawing.Size(866, 628);
-            this.chocolateyUninstall.TabIndex = 2;
-            this.chocolateyUninstall.Text = "chocolateyUninstall";
+            this.toolTip1.SetToolTip(this.chocolateyUninstall, resources.GetString("chocolateyUninstall.ToolTip"));
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(739, 49);
+            resources.ApplyResources(this.button14, "button14");
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(121, 37);
-            this.button14.TabIndex = 35;
             this.button14.TabStop = false;
-            this.button14.Text = "RUN";
-            this.toolTip1.SetToolTip(this.button14, "Simple Uninstall whith ");
+            this.toolTip1.SetToolTip(this.button14, resources.GetString("button14.ToolTip"));
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(739, 6);
+            resources.ApplyResources(this.button10, "button10");
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(121, 37);
-            this.button10.TabIndex = 34;
             this.button10.TabStop = false;
-            this.button10.Text = "Sample Uninstall";
-            this.toolTip1.SetToolTip(this.button10, "Simple Uninstall whith ");
+            this.toolTip1.SetToolTip(this.button10, resources.GetString("button10.ToolTip"));
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // richTextBox4
             // 
+            resources.ApplyResources(this.richTextBox4, "richTextBox4");
             this.richTextBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.richTextBox4.Location = new System.Drawing.Point(3, 3);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(730, 431);
-            this.richTextBox4.TabIndex = 33;
-            this.richTextBox4.Text = "";
-            this.richTextBox4.WordWrap = false;
+            this.toolTip1.SetToolTip(this.richTextBox4, resources.GetString("richTextBox4.ToolTip"));
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(739, 589);
+            resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(124, 36);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "Create";
-            this.toolTip1.SetToolTip(this.button8, "Create package");
+            this.toolTip1.SetToolTip(this.button8, resources.GetString("button8.ToolTip"));
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(8, 440);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(124, 36);
-            this.button9.TabIndex = 21;
-            this.button9.Text = "Prev";
-            this.toolTip1.SetToolTip(this.button9, "Previous Tab");
+            this.toolTip1.SetToolTip(this.button9, resources.GetString("button9.ToolTip"));
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // folderBrowserDialog1
+            // 
+            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
+            // 
+            // saveFileDialog1
+            // 
+            resources.ApplyResources(this.saveFileDialog1, "saveFileDialog1");
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(874, 677);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chocomaint - Chocolatey GUI for Maintainers";
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -1194,6 +996,9 @@
         private System.Windows.Forms.ToolStripMenuItem chekNowToolStripMenuItem;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.ToolStripMenuItem languagesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem russianToolStripMenuItem;
     }
 }
 

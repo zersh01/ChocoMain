@@ -12,3 +12,6 @@ D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMaint.application
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMaint.exe
 D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ChocoMaint.pdb
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ru\ChocoMaint.resources.dll
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.ru.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\ru\ChocoMaint.resources.dll

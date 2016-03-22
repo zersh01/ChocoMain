@@ -43,14 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="100864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="182272">
       <assemblyIdentity name="ChocoMaint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>86FdLFvJT4zB/SfhQvO3KX+JczuFFWGWf5uQTjLYoxg=</dsig:DigestValue>
+        <dsig:DigestValue>4PeAWlVMA/06PN1zw/D7ZLyk/CCksVR81EPlYr0ws4g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ChocoMaint.resources.dll" size="51712">
+      <assemblyIdentity name="ChocoMaint.resources" version="1.0.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Lcv8HNuf058EopXgyVOgMkK82pKLKKMzVmKo3xT5RmE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +75,13 @@
       <dsig:DigestValue>LlmJetHH5waNbLKrH83hAAYFAHJsZu7VK/4bfIoty1c=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ChocoMaint.exe.config" size="314">
+  <file name="ChocoMaint.exe.config" size="354">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oOqxjS6s7bU8cRwi5qjTqARJSYIca9YmNt4jdKfvhwo=</dsig:DigestValue>
+      <dsig:DigestValue>rXWvMmXN/OSOblobbF7fhngUJh9z20CPEWaO2CP5TCA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icon48.ico" size="4251">

@@ -17,7 +17,7 @@ Name "ChocoMaint"
 ; продукта, например 'MyApp' или 'CrapSoft MyApp'.
 ;------------------------------------------------------------------------
 ; Файл для записи. Это имя будет иметь наш инсталлятор.
-OutFile "ChocoMaint_1.0.3.3_Setup.exe"
+OutFile "ChocoMaint_1.0.3.4_Setup.exe"
 
 ;------------------------------------------------------------------------
 ; Команда InstallDir определяет директорию для установки программы. Путь
@@ -49,6 +49,8 @@ Section "ChocoMaint (required)"
   File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMaint.exe"
 
   File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMaint.exe.config"
+
+  File /r "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ru"
 
 
 

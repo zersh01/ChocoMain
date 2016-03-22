@@ -15,6 +15,9 @@ using Microsoft.VisualBasic;
 using System.Diagnostics;
 using System.Net;
 using System.Configuration;
+using System.Globalization;
+using System.Threading;
+
 
 namespace WindowsFormsApplication1
 {
@@ -24,6 +27,24 @@ namespace WindowsFormsApplication1
     {
         public Form1()
         {
+
+            //localized
+
+            string Language = ConfigurationManager.AppSettings["Language"];
+            if (Language == "en")
+            {
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                
+            }
+            else if (Language == "ru")
+            {
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("ru");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+            }
+
+            //localized
+
             InitializeComponent();
             tabControl1.Visible = false;
             textBox12.Visible = false;
@@ -42,6 +63,8 @@ namespace WindowsFormsApplication1
                 onStartToolStripMenuItem.Checked = false;
             }
             //Check autoupdate flag
+
+            
         }
 
 
@@ -626,15 +649,45 @@ namespace WindowsFormsApplication1
         {
 
             string InstallString = "choco install " + textBox1.Text + " -source " + label14.Text + " -y -force -version " + textBox4.Text + " & pause & exit";
-            System.Diagnostics.Process.Start("cmd.exe", @"/K" + InstallString);
-            //MessageBox.Show(InstallString);
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + InstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
 
         }
         //uninstallmenu
         private void uninstallThisPackageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string UninstallString = "choco uninstall " + textBox1.Text + " -a -y & pause & exit";
-            System.Diagnostics.Process.Start("cmd.exe", @"/K" + UninstallString);
+            //System.Diagnostics.Process.Start("cmd.exe", @"/K" + UninstallString);
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + UninstallString);
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
         }
 
         
@@ -750,11 +803,27 @@ namespace WindowsFormsApplication1
         {
             if (SaveOnly.Checked)
             {
-                button6.Text = "Save";
+                string Language = ConfigurationManager.AppSettings["Language"];
+                if (Language == "en")
+                {
+                    button6.Text = "Save";
+                }
+                else if (Language == "ru")
+                {
+                    button6.Text = "Сохранить";
+                }
             }
             else
             {
-                button6.Text = "Create";
+                string Language = ConfigurationManager.AppSettings["Language"];
+                if (Language == "en")
+                {
+                    button6.Text = "Create";
+                }
+                else if (Language == "ru")
+                {
+                    button6.Text = "Создать";
+                }
             }
         }
 
@@ -782,8 +851,17 @@ namespace WindowsFormsApplication1
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            textBox18.ReadOnly = false;
-            textBox18.Text = "true";
+            if (checkBox3.Checked)
+            {
+                textBox18.ReadOnly = false;
+                textBox18.Text = "true";
+            }
+            else 
+            {
+                textBox18.ReadOnly = true;
+                textBox18.Text = "";
+            }
+            
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -906,7 +984,33 @@ namespace WindowsFormsApplication1
             //go web-site 
             System.Diagnostics.Process.Start("https://chocolatey.org/packages/chocomaint/"+textBox19.Text);
         }
+
         
+        private void russianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            if (russianToolStripMenuItem.Checked)
+            {
+                Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+                config.AppSettings.Settings["Language"].Value = "ru";
+                config.Save(ConfigurationSaveMode.Minimal);
+                
+                MessageBox.Show("Пожалуйста, перезапустите ChocoMaint");
+            }
+
+        }
+                
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             if (englishToolStripMenuItem.Checked)
+            {
+                Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+                config.AppSettings.Settings["Language"].Value = "en";
+                config.Save(ConfigurationSaveMode.Minimal);
+                
+                MessageBox.Show("Please restart ChocoMaint");
+            }
+        }
     }
 }
 

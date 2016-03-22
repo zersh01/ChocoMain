@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ChocoMaint.exe.manifest" size="4966">
+    <dependentAssembly dependencyType="install" codebase="ChocoMaint.exe.manifest" size="5622">
       <assemblyIdentity name="ChocoMaint.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UAtWshZJYQtgDty7BNEhjOJN4v1DhuPZIyqs8zVbv+c=</dsig:DigestValue>
+        <dsig:DigestValue>n7g+9YE66t/ju3uxMlE2FNMgG/UPranaMnhL8sKhOwg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

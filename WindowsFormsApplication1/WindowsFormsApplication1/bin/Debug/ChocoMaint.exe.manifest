@@ -43,14 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="102912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="184832">
       <assemblyIdentity name="ChocoMaint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1LFbtysWgEJ5NRp4kkWPKwk2YpVWwJxcqf2VrO0mntI=</dsig:DigestValue>
+        <dsig:DigestValue>BdPYutZjYuwlUWUWNWwHEXAuGseJUDTQdkcjRTPHdp0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ChocoMaint.resources.dll" size="51712">
+      <assemblyIdentity name="ChocoMaint.resources" version="1.0.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jjEiA3Mii/N/DoMRFwUQz76ZcQE2YfTSOvVB+UuOuPA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru-RU\ChocoMaint.resources.dll" size="43008">
+      <assemblyIdentity name="ChocoMaint.resources" version="1.0.0.0" language="ru-RU" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>I+mVtExcolrx/79t7XhLW4qenj0/zfWTVxT2JFErDZw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +87,13 @@
       <dsig:DigestValue>LlmJetHH5waNbLKrH83hAAYFAHJsZu7VK/4bfIoty1c=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ChocoMaint.exe.config" size="314">
+  <file name="ChocoMaint.exe.config" size="354">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oOqxjS6s7bU8cRwi5qjTqARJSYIca9YmNt4jdKfvhwo=</dsig:DigestValue>
+      <dsig:DigestValue>rXWvMmXN/OSOblobbF7fhngUJh9z20CPEWaO2CP5TCA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icon48.ico" size="4251">
