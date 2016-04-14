@@ -17,7 +17,7 @@ Name "ChocoMaint"
 ; продукта, например 'MyApp' или 'CrapSoft MyApp'.
 ;------------------------------------------------------------------------
 ; Файл для записи. Это имя будет иметь наш инсталлятор.
-OutFile "ChocoMaint_1.0.3.4_Setup.exe"
+OutFile "ChocoMaint_1.0.3.5_Setup.exe"
 
 ;------------------------------------------------------------------------
 ; Команда InstallDir определяет директорию для установки программы. Путь
@@ -43,14 +43,14 @@ Section "ChocoMaint (required)"
 ;------------------------------------------------------------------------
   ; Указываем местоположение файлов, которые будут устанавливаться
   ; инсталлятором. Команда File определяет путь к файлу или каталогу
-  File /r "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\_templates"   
+  File /r "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\_templates"   
   ; параметр /r означает, что каталог DATA будет записываться вместе с  
   ; находящимися в нем файлами
-  File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMaint.exe"
+  File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.exe"
 
-  File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ChocoMaint.exe.config"
+  File "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.exe.config"
 
-  File /r "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\ru"
+  File /r "D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ru"
 
 
 

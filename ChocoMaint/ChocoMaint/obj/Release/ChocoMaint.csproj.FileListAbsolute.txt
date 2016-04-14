@@ -1,0 +1,17 @@
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.exe.config
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.exe.manifest
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.application
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.exe
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ChocoMaint.pdb
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\bin\Release\ru\ChocoMaint.resources.dll
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.Form1.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.Form2.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.Properties.Resources.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.Form1.ru.resources
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.csproj.GenerateResource.Cache
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ru\ChocoMaint.resources.dll
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.exe.manifest
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.application
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.exe
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.pdb
+D:\YandexDisk\backup\Chocolatey\MyProject\VisualStudio\ChocoMaint\ChocoMaint\obj\Release\ChocoMaint.csprojResolveAssemblyReference.cache
