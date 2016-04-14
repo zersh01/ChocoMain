@@ -643,7 +643,7 @@ namespace ChocoMaint
             string UploadPackage = "choco push " + label14.Text + "\\" + textBox1.Text + "." + textBox4.Text + ".nupkg & pause & exit";
             System.Diagnostics.Process.Start("cmd.exe", @"/K " + UploadPackage);
             //MessageBox.Show(UploadPackage);
-            if (System.IO.File.Exists("..//..//ChocoMon//UrlList.txt"))
+            if (System.IO.File.Exists("..//ChocoMon//UrlList.txt"))
             {
                 string message = "Do you want add this package to ChocoMon?";
                 string caption = "Add to ChocoMon";
