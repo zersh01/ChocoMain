@@ -27,8 +27,8 @@ you may add exist package to UrlList.
 </releaseNotes>
     <iconUrl>https://rawgit.com/zersh01/ChocoMain/master/Icon.png</iconUrl>
     <docsUrl>https://github.com/zersh01/ChocoMain/wiki</docsUrl>
-    <packageSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/ChocoMaint</packageSourceUrl>
-    <projectSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/WindowsFormsApplication1</projectSourceUrl>
+    <packageSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/Chocolatey_chocomaint</packageSourceUrl>
+    <projectSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/ChocoMaint</projectSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
