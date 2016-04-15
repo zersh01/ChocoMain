@@ -650,7 +650,7 @@
   <data name="languagesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAASZSURBVFhHtVdbiBxFFB0f4Ieo+H4iiuLrQxEDIqKCTle1
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAASZSURBVFhHtVdbiBxFFB0f4Ieo+H4iiuLrQxEDIqKCTle1
         WR8fugqCIKKCaPyJms3udJeC+BEF0Q8JwQhBCTHxRyQqYoyPfCmS3WX6sYsbCBHjh2ETNWhikvWcO7c6
         PTO9s70bPHCYqlt1H3VvTVV1oy4y17wkc8HDWWTeS2MzmUb27yy2c8LIHEpjO55Fdl3eso9wrqqdONJR
         ezGcbSucDWJk/wX3sZ1GZnvbLb9IzSwNWNVnYiw2m/F7uHA0HxEAHE9Mj4VXIeh3KUP/EzVXH9MuvAxp
@@ -731,7 +731,7 @@
     <value>Версия</value>
   </data>
   <data name="textBox19.Text" xml:space="preserve">
-    <value>1.0.3.5</value>
+    <value>1.0.3.6</value>
   </data>
   <data name="textBox18.ToolTip" xml:space="preserve">
     <value>True/false. Если включено по умолчанию true</value>

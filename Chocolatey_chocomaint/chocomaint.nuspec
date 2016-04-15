@@ -4,7 +4,7 @@
   <metadata>
     <id>chocomaint</id>
     <title>ChocoMaint [Unofficial]</title>
-    <version>1.0.3.5</version>
+    <version>1.0.3.6</version>
     <authors>S.Parhomenko</authors>
     <owners>zersh</owners>
     <summary>Simple GUI  for create package nupkg</summary>
@@ -18,15 +18,16 @@
     <copyright>S.Parhomenko</copyright>
     <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Integrete whith ChocoMon:
+    <releaseNotes>-Integrete whith ChocoMon:
 after upload package in Chocolate.org, if installs ChocoMon
 you may add exist package to UrlList.
 
+-rename Package Source in github.
 
 </releaseNotes>
     <iconUrl>https://rawgit.com/zersh01/ChocoMain/master/Icon.png</iconUrl>
     <docsUrl>https://github.com/zersh01/ChocoMain/wiki</docsUrl>
-    <packageSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/Chocolatey_chocomaint</packageSourceUrl>
+    <packageSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/ChocoMaint</packageSourceUrl>
     <projectSourceUrl>https://github.com/zersh01/ChocoMain/tree/master/WindowsFormsApplication1</projectSourceUrl>
   </metadata>
   <files>
