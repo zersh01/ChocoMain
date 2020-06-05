@@ -566,7 +566,7 @@ namespace ChocoMaint
             String apikey = Microsoft.VisualBasic.Interaction.InputBox("Enter Your API Key", "API Key ", "", 200, 200);
             if (apikey.Length > 0)
             {
-                string chocokey = "choco apiKey -k " + apikey + " -source https://chocolatey.org/ & pause & exit";
+                string chocokey = "choco apiKey -k " + apikey + " -source https://push.chocolatey.org/ & pause & exit";
                 System.Diagnostics.Process.Start("cmd.exe", @"/K" + chocokey);
             }
             else
