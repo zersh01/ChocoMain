@@ -149,6 +149,9 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="label17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
     <value>textBox11</value>
   </data>
@@ -170,17 +173,11 @@
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Requires administrative permissions</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
-    <value>checkBox5</value>
-  </data>
   <data name="label11.Text" xml:space="preserve">
     <value>IconUrl</value>
   </data>
   <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Sample EXE</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>739, 49</value>
@@ -240,11 +237,14 @@
   <data name="richTextBox4.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Tags</value>
+  <data name="&gt;&gt;installThisPackageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox8.ToolTip" xml:space="preserve">
     <value>points to the location of the wiki or docs of the software</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -265,7 +265,7 @@
     <value>Check if you want add dependencies</value>
   </data>
   <data name="exitToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+    <value>38, 20</value>
   </data>
   <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
     <value>30</value>
@@ -294,9 +294,6 @@
   <data name="checkBox6.Text" xml:space="preserve">
     <value>docsUrl </value>
   </data>
-  <data name="textBox9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -318,6 +315,9 @@
   <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>nuspec</value>
+  </data>
   <data name="&gt;&gt;label18.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -336,8 +336,8 @@
   <data name="&gt;&gt;textBox17.Name" xml:space="preserve">
     <value>textBox17</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 508</value>
+  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 37</value>
   </data>
   <data name="button3.ToolTip" xml:space="preserve">
     <value>Previous Tab</value>
@@ -348,8 +348,11 @@
   <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="uploadPackageToChocolateyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
+    <value>236, 22</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
@@ -381,9 +384,6 @@
   <data name="&gt;&gt;chekNowToolStripMenuItem.Name" xml:space="preserve">
     <value>chekNowToolStripMenuItem</value>
   </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 6</value>
-  </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -396,14 +396,17 @@
   <data name="exitToolStripMenuItem2.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 177</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 347</value>
   </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+  <data name="chocoMaintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 138</value>
@@ -420,8 +423,8 @@
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
     <value>739, 92</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 177</value>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
   </data>
   <data name="&gt;&gt;textBox17.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -439,7 +442,7 @@
     <value>exitToolStripMenuItem1</value>
   </data>
   <data name="checkUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 20</value>
@@ -543,9 +546,6 @@
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 462</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
@@ -567,9 +567,6 @@
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 36</value>
   </data>
-  <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 490</value>
-  </data>
   <data name="textBox10.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -587,6 +584,9 @@
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Version</value>
+  </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>projectSourceUrl </value>
   </data>
   <data name="checkUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Check update</value>
@@ -610,10 +610,13 @@
     <value>True</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 280</value>
+  </data>
+  <data name="&gt;&gt;nuspec.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -621,20 +624,20 @@
   <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
+  </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 20</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="textBox7.ToolTip" xml:space="preserve">
+    <value>Short description</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="checkBox6.ToolTip" xml:space="preserve">
     <value>points to the location of the wiki or docs of the software</value>
-  </data>
-  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
   </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
@@ -678,17 +681,17 @@
   <data name="button10.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
   <data name="label13.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
-    <value>nuspec</value>
   </data>
   <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -705,6 +708,9 @@
   <data name="textBox2.ToolTip" xml:space="preserve">
     <value>Enter tags, use separator  blank space</value>
   </data>
+  <data name="&gt;&gt;uploadPackageToChocolateyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="checkBox7.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
@@ -717,9 +723,6 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>41</value>
   </data>
-  <data name="textBox17.ToolTip" xml:space="preserve">
-    <value>points to the location of the underlying software source</value>
-  </data>
   <data name="&gt;&gt;textBox19.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -728,6 +731,9 @@
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
     <value>40</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;textBox15.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -780,6 +786,9 @@
   <data name="&gt;&gt;nuspec.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value>Small how-to about chocolateyInstall scripts</value>
+  </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -809,6 +818,9 @@
   </data>
   <data name="chocolateyUninstall.Text" xml:space="preserve">
     <value>chocolateyUninstall</value>
+  </data>
+  <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 191</value>
   </data>
   <data name="textBox4.ToolTip" xml:space="preserve">
     <value>Software version</value>
@@ -843,6 +855,9 @@
   <data name="&gt;&gt;SaveOnly.Name" xml:space="preserve">
     <value>SaveOnly</value>
   </data>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
+  </data>
   <data name="&gt;&gt;toolsToolStripMenuItem.Name" xml:space="preserve">
     <value>toolsToolStripMenuItem</value>
   </data>
@@ -863,11 +878,32 @@
         gQEA8E0t4x0d4GsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>nuspec</value>
+  <data name="aboutToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1058,11 +1094,11 @@
   <data name="textBox5.ToolTip" xml:space="preserve">
     <value>Author of software</value>
   </data>
-  <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 462</value>
+  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="aboutToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1091,32 +1127,8 @@
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
-  <data name="aboutToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="onStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 22</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1160,17 +1172,11 @@
   <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>315, 439</value>
   </data>
-  <data name="textBox7.ToolTip" xml:space="preserve">
-    <value>Short description</value>
-  </data>
   <data name="chocolateyInstall.Size" type="System.Drawing.Size, System.Drawing">
     <value>866, 628</value>
   </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 589</value>
   </data>
   <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
     <value>28</value>
@@ -1220,6 +1226,9 @@
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
   </data>
+  <data name="nuspec.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="uploadPackageToChocolateyToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABUtJREFUWEe9
@@ -1262,28 +1271,28 @@
   </data>
   <data name="languagesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAASZSURBVFhHtVdbiBxFFB0f4Ieo+H4iiuLrQxEDIqKCTle1
-        WR8fugqCIKKCaPyJms3udJeC+BEF0Q8JwQhBCTHxRyQqYoyPfCmS3WX6sYsbCBHjh2ETNWhikvWcO7c6
-        PTO9s70bPHCYqlt1H3VvTVV1oy4y17wkc8HDWWTeS2MzmUb27yy2c8LIHEpjO55Fdl3eso9wrqqdONJR
-        ezGcbSucDWJk/wX3sZ1GZnvbLb9IzSwNWNVnYiw2m/F7uHA0HxEAHE9Mj4VXIeh3KUP/EzVXH9MuvAxp
-        3Qsj2eTI0NkwcsA7QTBHENgbWctem7TCmwvnZUZ2dqrVvL7tmpczE5i/Px8LrlTzg4H6LaMRKKXs51Fw
-        O4I5CNnv3kHq7r2mM9de4WXHadoI8o/cmZBzCAQ0yjEGrKJqsN5iJLI7VdRoO3MODD4NuZQA7X/GVwan
-        cwyriztOj5Ny6FuMPc+2BwPiOMujon74tGuXhl7pdYA5r3MMgbzNYCrGb4HzEZTxTDFSQhLbx6FzRLvd
-        kA2HTfSzCy5QEQPaCmMT3Acc6zgxY5j7cZ9jEnNEL7Yb8tg8K0Z6AJsbscgt2u3Apz6J7B0qEsD5mtyF
-        N0q7arUlYvwHbf+FQDZBNxAjFUAQB9ORe87VrkT8JVa1S7tdmF4Rnpa7+87jHHXQR6YVq/oQjtfBzg5V
-        LQCHD9GOdnU/mLZ0pkaHLqUR7nYRlDDn3MlZyzzW67CXcHoMTg6hvWG7u+tUVRdMrr77Qs5JYvOoigQI
-        9s/spQfOaORxOMwJ5doT7GNlm8FfvKOFyEC4+aCzSsoQmw/w+0LbhTfwGFfTAsx9DmOWjfWo14G54eFT
-        GC0HZ1Y1z9IVVTqqZGR+6hiWv6yXJSDPEOnTBw6wJ7gw9A9jbCs32gQi2Zc42+Qk1PI1r7AYYiH7Ua4n
-        ob+NthgM7M6iP4N6r+DZwdOTcsLrdXY3L5DIfloY0sHFkOnnyYiT6CT10eB+8IcWgWCGEhfcyUC8nkSC
-        LBxFOl5EpN/4gcUSNtaqn4FAEO+DW7xekQqQNdlY6tcmVi/3Rl2wTF6364DBKkZ8ezGEXqy2a4Gnqdft
-        bEJvCPXnaiBb42V1yJSq7VroyYBd32PsHZ3HXdwqj81H2BhXlT6UN6UHdPzN+kVxEHnyIaHzBPxLISN7
-        ynOqiCB28d7Q+WvBo5D1HctEoeMCUxzFnnlkH9R5BaZa5iZkQ2/D+kQ2i6vdo/DHg45HMQFBcdFA6UcR
-        lsCLhEcsNs9Xfl5dIs1OzQhw474MO99BPqkibAp5+eIsUKUkCm7VoT503ot2d9nJIGJBb6qqALo7wdmu
-        65hAveQFLEr4N/Am1KEuZFFwf9nBQkQAt6kqM/2WyGLzkYq6gbrs9YqJC5eruAswKM/tukxb9inqTa8O
-        z5d9hGtYDFWheJRSEQeUigX8yIDyprLxmnwVC3tGNh36Ax+lhH+Wk3i5XEcZXsZXL/WeQDmP+faCz3IP
-        2Wix+RXpnuHKsUG/LxtdAn+r/WFSBgL4HGn/VmpXbXggUUa8FZfwaVaGfBUPeJDOR6T+6xP+OC3j//k8
-        bzT+A7jATy5khwS+AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAABJlJREFUWEe1V1uIHEUUHR/gh6j4fiKK4utDEQMiooJOV7VZHx+6CoIgooJo/Ima
+        ze50l4L4EQXRDwnBCEEJMfFHJCpijI98KZLdZfqxixsIEeOHYRM1aGKS9Zw7tzo9M72zvRs8cJiqW3Uf
+        dW9NVXWjLjLXvCRzwcNZZN5LYzOZRvbvLLZzwsgcSmM7nkV2Xd6yj3Cuqp040lF7MZxtK5wNYmT/Bfex
+        nUZme9stv0jNLA1Y1WdiLDab8Xu4cDQfEQAcT0yPhVch6HcpQ/8TNVcf0y68DGndCyPZ5MjQ2TBywDtB
+        MEcQ2BtZy16btMKbC+dlRnZ2qtW8vu2alzMTmL8/HwuuVPODgfotoxEopeznUXA7gjkI2e/eQeruvaYz
+        117hZcdp2gjyj9yZkHMIBDTKMQasomqw3mIksjtV1Gg7cw4MPg25lADtf8ZXBqdzDKuLO06Pk3LoW4w9
+        z7YHA+I4y6Oifvi0a5eGXul1gDmvcwyBvM1gKsZvgfMRlPFMMVJCEtvHoXNEu92QDYdN9LMLLlARA9oK
+        YxPcBxzrODFjmPtxn2MSc0Qvthvy2DwrRnoAmxuxyC3a7cCnPonsHSoSwPma3IU3SrtqtSVi/Adt/4VA
+        NkE3ECMVQBAH05F7ztWuRPwlVrVLu12YXhGelrv7zuMcddBHphWr+hCO18HODlUtAIcP0Y52dT+YtnSm
+        RocupRHudhGUMOfcyVnLPNbrsJdwegxODqG9Ybu761RVF0yuvvtCzkli86iKBAj2z+ylB85o5HE4zAnl
+        2hPsY2WbwV+8o4XIQLj5oLNKyhCbD/D7QtuFN/AYV9MCzH0OY5aN9ajXgbnh4VMYLQdnVjXP0hVVOqpk
+        ZH7qGJa/rJclIM8Q6dMHDrAnuDD0D2NsKzfaBCLZlzjb5CTU8jWvsBhiIftRriehv422GAzszqI/g3qv
+        4NnB05Nywut1djcvkMh+WhjSwcWQ6efJiJPoJPXR4H7whxaBYIYSF9zJQLyeRIIsHEU6XkSk3/iBxRI2
+        1qqfgUAQ74NbvF6RCpA12Vjq1yZWL/dGXbBMXrfrgMEqRnx7MYRerLZrgaep1+1sQm8I9edqIFvjZXXI
+        lKrtWujJgF3fY+wdncdd3CqPzUfYGFeVPpQ3pQd0/M36RXEQefIhofME/EshI3vKc6qIIHbx3tD5a8Gj
+        kPUdy0Sh4wJTHMWeeWQf1HkFplrmJmRDb8P6RDaLq92j8MeDjkcxAUFx0UDpRxGWwIuERyw2z1d+Xl0i
+        zU7NCHDjvgw730E+qSJsCnn54ixQpSQKbtWhPnTei3Z32ckgYkFvqqoAujvB2a7rmEC95AUsSvg38CbU
+        oS5kUXB/2cFCRAC3qSoz/ZbIYvORirqBuuz1iokLl6u4CzAoz+26TFv2KepNrw7Pl32Ea1gMVaF4lFIR
+        B5SKBfzIgPKmsvGafBULe0Y2HfoDH6WEf5aTeLlcRxlexlcv9Z5AOY/59oLPcg/ZaLH5Feme4cqxQb8v
+        G10Cf6v9YVIGAvgcaf9WaldteCBRRrwVl/BpVoZ8FQ94kM5HpP7rE/44LeP/+TxvNP4DuMBPLmSHBL4A
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
@@ -1347,9 +1356,6 @@
   <data name="&gt;&gt;textBox13.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
     <value>38</value>
   </data>
@@ -1384,19 +1390,16 @@
     <value>button1</value>
   </data>
   <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
+    <value>147, 22</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>305, 147</value>
   </data>
+  <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 17</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
   </data>
   <data name="label19.Text" xml:space="preserve">
     <value>Version</value>
@@ -1436,9 +1439,6 @@
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 225</value>
-  </data>
-  <data name="checkBox5.Text" xml:space="preserve">
-    <value>bugTrackerUrl </value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -1497,6 +1497,9 @@
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="checkBox1.ToolTip" xml:space="preserve">
     <value>True or false</value>
   </data>
@@ -1510,7 +1513,7 @@
     <value>121, 37</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+    <value>114, 22</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 24</value>
@@ -1557,14 +1560,17 @@
   <data name="menuStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="chocoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chocolatey</value>
+  </data>
   <data name="&gt;&gt;uninstallThisPackageToolStripMenuItem.Name" xml:space="preserve">
     <value>uninstallThisPackageToolStripMenuItem</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 462</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 13</value>
@@ -1587,8 +1593,8 @@
   <data name="button13.ToolTip" xml:space="preserve">
     <value>Small how-to about chocolateyInstall scripts</value>
   </data>
-  <data name="textBox19.Text" xml:space="preserve">
-    <value>1.0.3.3</value>
+  <data name="richTextBox3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>52</value>
@@ -1604,6 +1610,9 @@
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
+  </data>
+  <data name="&gt;&gt;enterToolStripMenuItem.Name" xml:space="preserve">
+    <value>enterToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;textBox11.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -1623,8 +1632,8 @@
   <data name="openNuspecToolStripMenuItem.Text" xml:space="preserve">
     <value>New</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 589</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 13</value>
@@ -1639,7 +1648,7 @@
     <value>305, 20</value>
   </data>
   <data name="chocoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+    <value>140, 22</value>
   </data>
   <data name="&gt;&gt;textBox15.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1654,13 +1663,10 @@
     <value>True</value>
   </data>
   <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>46, 20</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 20</value>
@@ -1689,20 +1695,17 @@
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 13</value>
   </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>47</value>
   </data>
   <data name="textBox12.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="button13.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="openNuspecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Open nuspec...</value>
@@ -1728,6 +1731,9 @@
   <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
     <value>exitToolStripMenuItem</value>
   </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
   <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1751,6 +1757,9 @@
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem1.Name" xml:space="preserve">
     <value>aboutToolStripMenuItem1</value>
+  </data>
+  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 20</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1776,6 +1785,9 @@
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
   </data>
+  <data name="&gt;&gt;textBox16.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="menuStrip1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1790,9 +1802,6 @@
   </data>
   <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 37</value>
   </data>
   <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -1845,9 +1854,6 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox15.Name" xml:space="preserve">
-    <value>textBox15</value>
-  </data>
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1857,11 +1863,17 @@
   <data name="button5.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
+  <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 412</value>
+  </data>
   <data name="SaveOnly.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 13</value>
+  </data>
+  <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 17</value>
   </data>
   <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -1896,52 +1908,20 @@
   <data name="label10.Text" xml:space="preserve">
     <value>ReleaseNotes</value>
   </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
-  <data name="&gt;&gt;richTextBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;button8.Name" xml:space="preserve">
     <value>button8</value>
   </data>
-  <data name="button10.Text" xml:space="preserve">
-    <value>Sample Uninstall</value>
+  <data name="&gt;&gt;checkUpdateToolStripMenuItem.Name" xml:space="preserve">
+    <value>checkUpdateToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;button11.Parent" xml:space="preserve">
     <value>nuspec</value>
-  </data>
-  <data name="chocoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABVdJREFUaEPtmttLVFscx+et8z+cA75omte0BEFQ8x6FmmKSgonSgw+Z9uCFAlGs
-        h4jAFxEvlb4kPoQX8CFECxS1OtTJMtGIyDAvZV6Ol+Ptd/Z3zVrDds/Pmdmjh5xDP/g4w/p999q/397r
-        t9bazrYo8/b2Pubr61vk5+f3/Pjx439rn3SU0GL6R+NP7XuJl5fXbzJsq2nB/6E5/tIfcJTREhlFzCr4
-        Y1qjxwSv4w1it8hhwwk8gWKL9ue5odGTeGk5igVrgnXcAc7hMfxK4Gfz/0zA39+fAgICHKK0J06cYP1A
-        32dISAidPHnSDpwLfnyGhYXtC47X96dgExgaGiJnduPGDaGtq6uTLfZ29uxZW58/fvyQrXvt6tWrwv/w
-        4UPZwtvg4KCtLz1sAqdOnaILFy5QR0eHPNxqAwMDdO7cOYqJibFd4eDgYMrOzqa5uTmpIvr8+TOlpaXZ
-        ri6Iioqi8vJyqbAGlJycbOsHn+g3Ly+PZmZmpIqos7OTLl68SOHh4ba+9DisAdy2b9++ya6snXE6cPPm
-        TakicbWDgoLsNAkJCcK/vr4ugjX6FTgPrKuri/XrcVrEDQ0NojPYysqKGLecDgHPzs5KJVFZWZmdRg23
-        +vp6O58CNfXlyxfa3d2l+Ph4VqPHaQJJSUnipMoqKipYHbh7965UEb1//36PLzQ0lBYXF2l1dZUiIiL2
-        +PRgCMEwXDm/EacJgOHhYdEp7NWrV6wGYJwiQGUIRvlqampEW1NT055jjHR3dwvdtWvXWL8RlxK4fv26
-        6FRZamoqqwMPHjyQKqKnT5+KNhQohgXGfmRkpN0xClyAjY0NUXeBgYGsxohLCaAzfTE/evSI1QEU59bW
-        ltBhHGMqVRegtbWVPUZRVVUldI2Njayfw6UEgH6+xzDBVMvpgH76RbLv3r2jzc1Nio6OZvWK0dFRkXRi
-        YiLr53A5AVzZ7e1tGRZRdXU1qwPnz58XgcDUMW1tbaxWkZKSInRYRDn/fricAHjy5Ik4CezDhw+sRtHf
-        3y+V1iTi4uJYnaKlpUVoi4uLWf9+mEogNzdXnETZ5cuXWR3Iz8+XKnJalPAtLCzQ9+/f2QXQEaYSABMT
-        EzIsEneE0wAsSNPT01JJVFpayupAUVGR0DQ3N7N+R5hOoLKyUpwMhqFx5swZVoeCVbMRbGxsjNWBZ8+e
-        iZrBosn5HWE6AWwllpaWZFgkthqcDguW0bghh00eLoTZ4lWYTgDcv39fhkRi7Br36qdPnxb7pqmpKdvG
-        DIbC1uvAvXv3hK+kpMTO5wpuJYBN1s7OjjgxzLg/unPnjmi/ffs2ZWZmiu8wtbDptZ8+fXKreBVuJQD6
-        +vpkWERv3761tWNG+fr1q7gDarHDAqVMvx7k5OSINmf7I0e4nUBBQYE4ubJLly6Jdsw2MAwzpcUdUob9
-        kNqNPn782O3iVbidAKbJjx8/yrCIenp6RPv4+Ljd7IQa0T9S1tbWiufctbU1t4tX4XYC4NatWzIk65SK
-        52SYSkYPNmjK5ufnbRs3syuvkQMlgNkGV9FoGRkZdtrY2Ng9hY+hY2bbvB8HSgC0t7fLkKw2MjLC6kBv
-        b69UWW2/NcQMB04gPT1dhmO1K1eusDqgHhdhuBuuPPM648AJAEyjMEfbBcXk5KTQYvvA+c1yKAkUFhbS
-        8vIyZWVlsX49uENYuPB/J85vlkNJAGBa5dr/aw4tgZ/FrwR+Np6fAH4B5xwewjoSwM/3nNMTeIEhVGJo
-        9BjwI70FL07g3QNOcMR5LV41kO9L4GWPNwbBUea1j4/P7yJ4ZbgTmqNY46XGuhQeJRDTCwwb25W3WCz/
-        ApW2w0V1llkuAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1971,19 +1951,22 @@
     <value>39</value>
   </data>
   <data name="uninstallThisPackageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
+    <value>236, 22</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 241</value>
   </data>
-  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
   </data>
   <data name="checkBox2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 56</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>Create</value>
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
     <value>33</value>
@@ -2000,14 +1983,14 @@
   <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Next</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 508</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
   </data>
   <data name="&gt;&gt;button3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2018,14 +2001,20 @@
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="textBox18.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
+    <value>147, 22</value>
+  </data>
+  <data name="button10.Text" xml:space="preserve">
+    <value>Sample Uninstall</value>
   </data>
   <data name="chocolateyUninstall.ToolTip" xml:space="preserve">
     <value />
@@ -2036,8 +2025,8 @@
   <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
-  <data name="&gt;&gt;checkUpdateToolStripMenuItem.Name" xml:space="preserve">
-    <value>checkUpdateToolStripMenuItem</value>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label16.ToolTip" xml:space="preserve">
     <value />
@@ -2069,11 +2058,17 @@
   <data name="SaveOnly.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>nuspec</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
     <value>730, 424</value>
   </data>
-  <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 191</value>
+  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
     <value>textBox6</value>
@@ -2090,26 +2085,23 @@
   <data name="&gt;&gt;richTextBox4.Parent" xml:space="preserve">
     <value>chocolateyUninstall</value>
   </data>
-  <data name="&gt;&gt;enterToolStripMenuItem.Name" xml:space="preserve">
-    <value>enterToolStripMenuItem</value>
+  <data name="button13.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="chekNowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+    <value>185, 22</value>
   </data>
   <data name="checkBox3.ToolTip" xml:space="preserve">
     <value>points to the location of the wiki or docs of the software</value>
   </data>
-  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 6</value>
   </data>
   <data name="button8.Text" xml:space="preserve">
     <value>Create</value>
   </data>
   <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="onStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
   </data>
   <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
     <value>textBox7</value>
@@ -2123,8 +2115,8 @@
   <data name="&gt;&gt;button13.Name" xml:space="preserve">
     <value>button13</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="&gt;&gt;button6.Parent" xml:space="preserve">
     <value>nuspec</value>
@@ -2150,11 +2142,8 @@
   <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="nuspec.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chocolateyInstall.ToolTip" xml:space="preserve">
-    <value />
+  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2165,8 +2154,8 @@
   <data name="&gt;&gt;button10.Name" xml:space="preserve">
     <value>button10</value>
   </data>
-  <data name="chocoMaintToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>chocolateyInstall</value>
   </data>
   <data name="openNuspecToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
@@ -2180,23 +2169,26 @@
   <data name="textBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>305, 20</value>
   </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;textBox18.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chocolateyUninstall.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="richTextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 431</value>
-  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>196, 22</value>
   </data>
   <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>305, 126</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 396</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
   </data>
   <data name="textBox15.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -2217,7 +2209,7 @@
     <value>True</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>44, 20</value>
   </data>
   <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
     <value>checkBox7</value>
@@ -2225,8 +2217,8 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>45</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>chocolateyInstall</value>
+  <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -2249,11 +2241,11 @@
   <data name="textBox11.ToolTip" xml:space="preserve">
     <value>Сopyright</value>
   </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;openNuspecToolStripMenuItem.Name" xml:space="preserve">
     <value>openNuspecToolStripMenuItem</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 609</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2337,23 +2329,17 @@
         AA+DwAAfg////4P///+D////x/////////8=
 </value>
   </data>
-  <data name="openNuspecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+  <data name="textBox17.ToolTip" xml:space="preserve">
+    <value>points to the location of the underlying software source</value>
   </data>
   <data name="textBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>315, 513</value>
-  </data>
-  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
-    <value>nuspec</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="richTextBox3.WordWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 20</value>
@@ -2412,8 +2398,8 @@
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;uploadPackageToChocolateyToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 462</value>
   </data>
   <data name="richTextBox4.WordWrap" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2424,9 +2410,6 @@
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 440</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 9</value>
   </data>
@@ -2434,16 +2417,13 @@
     <value>points to the forum or email list group for the software</value>
   </data>
   <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>196, 22</value>
   </data>
   <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 20</value>
   </data>
   <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
     <value>nuspec</value>
-  </data>
-  <data name="richTextBox3.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 20</value>
@@ -2496,17 +2476,11 @@
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>723, 9</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;installThisPackageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="installThisPackageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+    <value>236, 22</value>
   </data>
   <data name="richTextBox2.ToolTip" xml:space="preserve">
     <value>ReleaseNotes</value>
@@ -2514,11 +2488,8 @@
   <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
     <value>nuspec</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>nuspec</value>
-  </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Next</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -2590,8 +2561,8 @@
   <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
-    <value>nuspec</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2602,17 +2573,14 @@
   <data name="textBox17.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Name:</value>
   </data>
   <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 17</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -2620,8 +2588,8 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>46</value>
   </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
     <value>34</value>
@@ -2641,8 +2609,8 @@
   <data name="&gt;&gt;chocolateyInstall.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button5.ToolTip" xml:space="preserve">
-    <value>Small how-to about chocolateyInstall scripts</value>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
   </data>
   <data name="uninstallThisPackageToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2680,17 +2648,20 @@
   <data name="textBox13.ToolTip" xml:space="preserve">
     <value>points to the location of the underlying software source</value>
   </data>
-  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 20</value>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 609</value>
   </data>
   <data name="button7.ToolTip" xml:space="preserve">
     <value>Create package</value>
   </data>
+  <data name="&gt;&gt;richTextBox3.Parent" xml:space="preserve">
+    <value>chocolateyInstall</value>
+  </data>
   <data name="&gt;&gt;textBox10.Name" xml:space="preserve">
     <value>textBox10</value>
   </data>
-  <data name="&gt;&gt;nuspec.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="exitToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+O</value>
@@ -2710,14 +2681,17 @@
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
   </data>
-  <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="SaveOnly.Location" type="System.Drawing.Point, System.Drawing">
     <value>651, 561</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2734,8 +2708,8 @@
   <data name="&gt;&gt;button11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 412</value>
+  <data name="chocolateyInstall.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -2746,20 +2720,17 @@
   <data name="button13.Text" xml:space="preserve">
     <value>RUN</value>
   </data>
-  <data name="label17.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
+    <value>nuspec</value>
   </data>
   <data name="&gt;&gt;textBox18.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="textBox9.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
     <value>RrequireLicenseAcceptance</value>
@@ -2774,7 +2745,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="enterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
+    <value>236, 22</value>
   </data>
   <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 206</value>
@@ -2785,26 +2756,26 @@
   <data name="checkBox4.ToolTip" xml:space="preserve">
     <value>points to the location of the underlying software source</value>
   </data>
-  <data name="chocoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chocolatey</value>
+  <data name="richTextBox3.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;exitToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox16.ZOrder" xml:space="preserve">
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Sample EXE</value>
   </data>
   <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
     <value>englishToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>nuspec</value>
+  <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 490</value>
   </data>
   <data name="&gt;&gt;textBox16.Name" xml:space="preserve">
     <value>textBox16</value>
@@ -2824,8 +2795,8 @@
   <data name="textBox1.ToolTip" xml:space="preserve">
     <value>Package name in chocolatey.org</value>
   </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 17</value>
+  <data name="&gt;&gt;textBox15.Name" xml:space="preserve">
+    <value>textBox15</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 25</value>
@@ -2869,8 +2840,8 @@
   <data name="&gt;&gt;languagesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 17</value>
+  <data name="&gt;&gt;exitToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>37</value>
@@ -2878,8 +2849,8 @@
   <data name="&gt;&gt;SaveOnly.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox4.Text" xml:space="preserve">
-    <value>projectSourceUrl </value>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="button11.Text" xml:space="preserve">
     <value>Install this package</value>
@@ -2902,14 +2873,40 @@
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 17</value>
+  <data name="chocoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        ApW2w0V1llkuAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+  <data name="richTextBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>730, 431</value>
   </data>
   <data name="&gt;&gt;textBox10.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2917,23 +2914,23 @@
   <data name="button9.Text" xml:space="preserve">
     <value>Prev</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Copyright</value>
+  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>nuspec</value>
+  <data name="checkBox5.Text" xml:space="preserve">
+    <value>bugTrackerUrl </value>
   </data>
-  <data name="&gt;&gt;richTextBox3.Parent" xml:space="preserve">
-    <value>chocolateyInstall</value>
+  <data name="&gt;&gt;richTextBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button14.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>Create</value>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
   </data>
   <data name="label19.ToolTip" xml:space="preserve">
     <value />
@@ -2944,11 +2941,11 @@
   <data name="label18.Text" xml:space="preserve">
     <value>Click to Icon preview</value>
   </data>
-  <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
-    <value>nuspec</value>
+  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;button8.Parent" xml:space="preserve">
     <value>chocolateyUninstall</value>
@@ -2987,6 +2984,6 @@
     <value>256, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>35</value>
+    <value>25</value>
   </metadata>
 </root>

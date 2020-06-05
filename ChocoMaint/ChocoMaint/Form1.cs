@@ -709,7 +709,7 @@ namespace ChocoMaint
         private void button11_Click(object sender, EventArgs e)
         {
 
-            string InstallString = "choco install " + textBox1.Text + " -source " + label14.Text + " -y -force -version " + textBox4.Text + " & pause & exit";
+            string InstallString = "choco install " + textBox1.Text + " -source " + label14.Text + " -y -force --version " + textBox4.Text + " & pause & exit";
             const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
 
             ProcessStartInfo info = new ProcessStartInfo("cmd.exe", @"/K" + InstallString);
@@ -943,8 +943,11 @@ namespace ChocoMaint
 
                 using (StreamReader sr = new StreamReader(LatestVersion))
                 {
-                    string CurVersion = textBox19.Text;
-                    string NewVersion = sr.ReadToEnd();
+                        System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                        System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+                        
+                        string CurVersion = fvi.FileVersion;
+                        string NewVersion = sr.ReadToEnd();
 
                     if (CurVersion != NewVersion)
                     {

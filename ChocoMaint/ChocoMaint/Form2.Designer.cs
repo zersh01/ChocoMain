@@ -105,9 +105,8 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "1.0.3.6";
             // 
             // label6
             // 

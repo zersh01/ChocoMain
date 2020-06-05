@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Icon48.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ChocoMaint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ChocoMaint" version="1.0.3.7" language="neutral" processorArchitecture="msil" />
     <commandLine file="ChocoMaint.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -16,14 +16,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           Параметры манифеста UAC
-          При необходимости изменить уровень управления учетными записями Windows замените 
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
           узел requestedExecutionLevel одним из следующих значений.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-        Если вы хотите использовать виртуализацию файлов и реестра для обратной
+        Если нужно использовать виртуализацию файлов и реестра для обратной
              совместимости, удалите узел requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -44,25 +44,37 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChocoMaint.exe" size="182784">
-      <assemblyIdentity name="ChocoMaint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="ChocoMaint" version="1.0.3.7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KBhuUN+lrT6/Q+Y9xA8cZOn5lLva6eOOv7POrJ7cibk=</dsig:DigestValue>
+        <dsig:DigestValue>ZkpXNr0yByEZ42PKtlBbeVImEuZwju/BG32lfreOCgg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ChocoMaint.resources.dll" size="51712">
-      <assemblyIdentity name="ChocoMaint.resources" version="1.0.0.0" language="ru" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\ChocoMaint.resources.dll" size="42496">
+      <assemblyIdentity name="ChocoMaint.resources" version="1.0.3.7" language="en" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WBn3mLjyvJJwrUB5CRb5p6gjuJZK1jbICDj7rsmft8I=</dsig:DigestValue>
+        <dsig:DigestValue>qoemAAP0lUyLJewu+SbH8ykZKIEBxhsvRJ5mdKuunPA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ChocoMaint.resources.dll" size="52224">
+      <assemblyIdentity name="ChocoMaint.resources" version="1.0.3.7" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4ImcH6Rg9O4alig1e+CQAfoUeIMkTS1BX62VjQYU1Dg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

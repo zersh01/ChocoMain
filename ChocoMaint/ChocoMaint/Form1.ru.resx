@@ -194,7 +194,7 @@
 </value>
   </data>
   <data name="openNuspecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
+    <value>214, 22</value>
   </data>
   <data name="openNuspecToolStripMenuItem.Text" xml:space="preserve">
     <value>Новый</value>
@@ -269,7 +269,7 @@
 </value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
+    <value>214, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть nuspec...</value>
@@ -299,13 +299,13 @@
 </value>
   </data>
   <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
+    <value>214, 22</value>
   </data>
   <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>48, 20</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Файл</value>
@@ -351,7 +351,7 @@
 </value>
   </data>
   <data name="installThisPackageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>240, 22</value>
   </data>
   <data name="installThisPackageToolStripMenuItem.Text" xml:space="preserve">
     <value>Установить открытый пакет</value>
@@ -390,7 +390,7 @@
 </value>
   </data>
   <data name="uninstallThisPackageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>240, 22</value>
   </data>
   <data name="uninstallThisPackageToolStripMenuItem.Text" xml:space="preserve">
     <value>Удалить открытый пакет</value>
@@ -424,7 +424,7 @@
 </value>
   </data>
   <data name="uploadPackageToChocolateyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>240, 22</value>
   </data>
   <data name="uploadPackageToChocolateyToolStripMenuItem.Text" xml:space="preserve">
     <value>Загрузить пакет на Chocolatey</value>
@@ -447,13 +447,13 @@
 </value>
   </data>
   <data name="enterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>240, 22</value>
   </data>
   <data name="enterToolStripMenuItem.Text" xml:space="preserve">
     <value>Ввести API Key</value>
   </data>
   <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
+    <value>95, 20</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>Инструменты</value>
@@ -573,13 +573,13 @@
 </value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+    <value>199, 22</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Справка</value>
   </data>
   <data name="onStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
+    <value>211, 22</value>
   </data>
   <data name="onStartToolStripMenuItem.Text" xml:space="preserve">
     <value>При запуске Chocomaint</value>
@@ -603,7 +603,7 @@
 </value>
   </data>
   <data name="chekNowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
+    <value>211, 22</value>
   </data>
   <data name="chekNowToolStripMenuItem.Text" xml:space="preserve">
     <value>Проверить сейчас</value>
@@ -630,51 +630,51 @@
 </value>
   </data>
   <data name="checkUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+    <value>199, 22</value>
   </data>
   <data name="checkUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Проверка обновлений</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>Английский</value>
   </data>
   <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="russianToolStripMenuItem.Text" xml:space="preserve">
     <value>Русский</value>
   </data>
   <data name="languagesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAASZSURBVFhHtVdbiBxFFB0f4Ieo+H4iiuLrQxEDIqKCTle1
-        WR8fugqCIKKCaPyJms3udJeC+BEF0Q8JwQhBCTHxRyQqYoyPfCmS3WX6sYsbCBHjh2ETNWhikvWcO7c6
-        PTO9s70bPHCYqlt1H3VvTVV1oy4y17wkc8HDWWTeS2MzmUb27yy2c8LIHEpjO55Fdl3eso9wrqqdONJR
-        ezGcbSucDWJk/wX3sZ1GZnvbLb9IzSwNWNVnYiw2m/F7uHA0HxEAHE9Mj4VXIeh3KUP/EzVXH9MuvAxp
-        3Qsj2eTI0NkwcsA7QTBHENgbWctem7TCmwvnZUZ2dqrVvL7tmpczE5i/Px8LrlTzg4H6LaMRKKXs51Fw
-        O4I5CNnv3kHq7r2mM9de4WXHadoI8o/cmZBzCAQ0yjEGrKJqsN5iJLI7VdRoO3MODD4NuZQA7X/GVwan
-        cwyriztOj5Ny6FuMPc+2BwPiOMujon74tGuXhl7pdYA5r3MMgbzNYCrGb4HzEZTxTDFSQhLbx6FzRLvd
-        kA2HTfSzCy5QEQPaCmMT3Acc6zgxY5j7cZ9jEnNEL7Yb8tg8K0Z6AJsbscgt2u3Apz6J7B0qEsD5mtyF
-        N0q7arUlYvwHbf+FQDZBNxAjFUAQB9ORe87VrkT8JVa1S7tdmF4Rnpa7+87jHHXQR6YVq/oQjtfBzg5V
-        LQCHD9GOdnU/mLZ0pkaHLqUR7nYRlDDn3MlZyzzW67CXcHoMTg6hvWG7u+tUVRdMrr77Qs5JYvOoigQI
-        9s/spQfOaORxOMwJ5doT7GNlm8FfvKOFyEC4+aCzSsoQmw/w+0LbhTfwGFfTAsx9DmOWjfWo14G54eFT
-        GC0HZ1Y1z9IVVTqqZGR+6hiWv6yXJSDPEOnTBw6wJ7gw9A9jbCs32gQi2Zc42+Qk1PI1r7AYYiH7Ua4n
-        ob+NthgM7M6iP4N6r+DZwdOTcsLrdXY3L5DIfloY0sHFkOnnyYiT6CT10eB+8IcWgWCGEhfcyUC8nkSC
-        LBxFOl5EpN/4gcUSNtaqn4FAEO+DW7xekQqQNdlY6tcmVi/3Rl2wTF6364DBKkZ8ezGEXqy2a4Gnqdft
-        bEJvCPXnaiBb42V1yJSq7VroyYBd32PsHZ3HXdwqj81H2BhXlT6UN6UHdPzN+kVxEHnyIaHzBPxLISN7
-        ynOqiCB28d7Q+WvBo5D1HctEoeMCUxzFnnlkH9R5BaZa5iZkQ2/D+kQ2i6vdo/DHg45HMQFBcdFA6UcR
-        lsCLhEcsNs9Xfl5dIs1OzQhw474MO99BPqkibAp5+eIsUKUkCm7VoT503ot2d9nJIGJBb6qqALo7wdmu
-        65hAveQFLEr4N/Am1KEuZFFwf9nBQkQAt6kqM/2WyGLzkYq6gbrs9YqJC5eruAswKM/tukxb9inqTa8O
-        z5d9hGtYDFWheJRSEQeUigX8yIDyprLxmnwVC3tGNh36Ax+lhH+Wk3i5XEcZXsZXL/WeQDmP+faCz3IP
-        2Wix+RXpnuHKsUG/LxtdAn+r/WFSBgL4HGn/VmpXbXggUUa8FZfwaVaGfBUPeJDOR6T+6xP+OC3j//k8
-        bzT+A7jATy5khwS+AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAABJlJREFUWEe1V1uIHEUUHR/gh6j4fiKK4utDEQMiooJOV7VZHx+6CoIgooJo/Ima
+        ze50l4L4EQXRDwnBCEEJMfFHJCpijI98KZLdZfqxixsIEeOHYRM1aGKS9Zw7tzo9M72zvRs8cJiqW3Uf
+        dW9NVXWjLjLXvCRzwcNZZN5LYzOZRvbvLLZzwsgcSmM7nkV2Xd6yj3Cuqp040lF7MZxtK5wNYmT/Bfex
+        nUZme9stv0jNLA1Y1WdiLDab8Xu4cDQfEQAcT0yPhVch6HcpQ/8TNVcf0y68DGndCyPZ5MjQ2TBywDtB
+        MEcQ2BtZy16btMKbC+dlRnZ2qtW8vu2alzMTmL8/HwuuVPODgfotoxEopeznUXA7gjkI2e/eQeruvaYz
+        117hZcdp2gjyj9yZkHMIBDTKMQasomqw3mIksjtV1Gg7cw4MPg25lADtf8ZXBqdzDKuLO06Pk3LoW4w9
+        z7YHA+I4y6Oifvi0a5eGXul1gDmvcwyBvM1gKsZvgfMRlPFMMVJCEtvHoXNEu92QDYdN9LMLLlARA9oK
+        YxPcBxzrODFjmPtxn2MSc0Qvthvy2DwrRnoAmxuxyC3a7cCnPonsHSoSwPma3IU3SrtqtSVi/Adt/4VA
+        NkE3ECMVQBAH05F7ztWuRPwlVrVLu12YXhGelrv7zuMcddBHphWr+hCO18HODlUtAIcP0Y52dT+YtnSm
+        RocupRHudhGUMOfcyVnLPNbrsJdwegxODqG9Ybu761RVF0yuvvtCzkli86iKBAj2z+ylB85o5HE4zAnl
+        2hPsY2WbwV+8o4XIQLj5oLNKyhCbD/D7QtuFN/AYV9MCzH0OY5aN9ajXgbnh4VMYLQdnVjXP0hVVOqpk
+        ZH7qGJa/rJclIM8Q6dMHDrAnuDD0D2NsKzfaBCLZlzjb5CTU8jWvsBhiIftRriehv422GAzszqI/g3qv
+        4NnB05Nywut1djcvkMh+WhjSwcWQ6efJiJPoJPXR4H7whxaBYIYSF9zJQLyeRIIsHEU6XkSk3/iBxRI2
+        1qqfgUAQ74NbvF6RCpA12Vjq1yZWL/dGXbBMXrfrgMEqRnx7MYRerLZrgaep1+1sQm8I9edqIFvjZXXI
+        lKrtWujJgF3fY+wdncdd3CqPzUfYGFeVPpQ3pQd0/M36RXEQefIhofME/EshI3vKc6qIIHbx3tD5a8Gj
+        kPUdy0Sh4wJTHMWeeWQf1HkFplrmJmRDb8P6RDaLq92j8MeDjkcxAUFx0UDpRxGWwIuERyw2z1d+Xl0i
+        zU7NCHDjvgw730E+qSJsCnn54ixQpSQKbtWhPnTei3Z32ckgYkFvqqoAujvB2a7rmEC95AUsSvg38CbU
+        oS5kUXB/2cFCRAC3qSoz/ZbIYvORirqBuuz1iokLl6u4CzAoz+26TFv2KepNrw7Pl32Ea1gMVaF4lFIR
+        B5SKBfzIgPKmsvGafBULe0Y2HfoDH6WEf5aTeLlcRxlexlcv9Z5AOY/59oLPcg/ZaLH5Feme4cqxQb8v
+        G10Cf6v9YVIGAvgcaf9WaldteCBRRrwVl/BpVoZ8FQ94kM5HpP7rE/44LeP/+TxvNP4DuMBPLmSHBL4A
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="languagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+    <value>199, 22</value>
   </data>
   <data name="languagesToolStripMenuItem.Text" xml:space="preserve">
     <value>Язык</value>
@@ -707,19 +707,19 @@
 </value>
   </data>
   <data name="aboutToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+    <value>199, 22</value>
   </data>
   <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
     <value>О программе</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>65, 20</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>Справка</value>
   </data>
   <data name="exitToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
+    <value>54, 20</value>
   </data>
   <data name="exitToolStripMenuItem2.Text" xml:space="preserve">
     <value>Выход</value>
@@ -729,9 +729,6 @@
   </data>
   <data name="label19.Text" xml:space="preserve">
     <value>Версия</value>
-  </data>
-  <data name="textBox19.Text" xml:space="preserve">
-    <value>1.0.3.6</value>
   </data>
   <data name="textBox18.ToolTip" xml:space="preserve">
     <value>True/false. Если включено по умолчанию true</value>
